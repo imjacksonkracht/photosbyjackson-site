@@ -73,10 +73,14 @@ test("internal links all resolve", async ({ page, request }) => {
   }
 });
 
-test("old Canva URL redirects to the portfolio", async ({ request }) => {
-  const res = await request.get("/portfolio", { maxRedirects: 0 });
-  expect(res.status()).toBe(308);
-  expect(res.headers().location).toMatch(/\/work$/);
+test("old Canva URL redirects to the portfolio, any capitalization", async ({ request }) => {
+  for (const path of ["/portfolio", "/Portfolio", "/PORTFOLIO", "/portfolio/concerts"]) {
+    const res = await request.get(path, { maxRedirects: 0 });
+    expect(res.status(), path).toBe(308);
+    expect(res.headers().location, path).toMatch(/\/work$/);
+  }
+  const tagged = await request.get("/portfolio?ref=ig", { maxRedirects: 0 });
+  expect(tagged.headers().location).toMatch(/\/work\?ref=ig$/);
 });
 
 test("sitemap and robots are served", async ({ request }) => {
