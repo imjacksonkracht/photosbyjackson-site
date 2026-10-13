@@ -165,6 +165,12 @@
 .hero-settle { animation: hero-settle 2.2s var(--ease-out-expo) both; }
 
 /* Hero slideshow: stacked slides, crossfaded by toggling data-active. */
+@media (min-width: 768px) {
+  .hero-frame {
+    transform: scale(var(--zoom, 1));
+    transform-origin: var(--origin, 50% 50%);
+  }
+}
 .hero-slide,
 .hero-label {
   opacity: 0;

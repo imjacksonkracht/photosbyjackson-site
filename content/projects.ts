@@ -244,12 +244,23 @@ export const categoryCovers: Record<Category, string> = {
   portraits: rec("group-portrait-03"),
 };
 
-/** Hero slideshow, in order. The first slide is server-rendered and shown immediately. */
-export const heroSlides: { photo: string; slug: string }[] = [
+/**
+ * Hero slideshow, in order: all from HCGG × Petty Theft. The first slide is
+ * server-rendered and shown immediately. `zoom` (desktop only) scales the
+ * photo from `origin` to keep faces clear of the headline at bottom left.
+ */
+export type HeroSlide = { photo: string; slug: string; zoom?: number; origin?: string };
+
+export const heroSlides: HeroSlide[] = [
   { photo: pt("guitarist-silhouette-01"), slug: "hcgg-petty-theft" },
-  { photo: sf("co2-cannons-01"), slug: "swamp-fest" },
-  { photo: lftl("trombonist-01"), slug: "live-from-the-lawn" },
-  { photo: sf("crowd-01"), slug: "swamp-fest" },
+  // Close-up: zoomed from the left edge, which pushes the face right of the headline.
+  { photo: pt("lead-vocalist-01"), slug: "hcgg-petty-theft", zoom: 1.3, origin: "0% 30%" },
+  // Low angle, full body.
+  { photo: pt("lead-vocalist-03"), slug: "hcgg-petty-theft" },
+  // Black and white.
+  { photo: pt("lead-vocalist-06"), slug: "hcgg-petty-theft" },
+  // Wider stage.
+  { photo: pt("bassist-01"), slug: "hcgg-petty-theft" },
 ];
 
 export function projectLabel(p: Project) {

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import { Picture } from "@/components/Picture";
 import { getProject, heroSlides } from "@/content/projects";
 import { HeroRotator } from "./HeroRotator";
@@ -16,7 +17,16 @@ export function Hero() {
             className="hero-slide absolute inset-0"
           >
             <div className={i === 0 ? "hero-settle absolute inset-0" : "absolute inset-0"}>
-              <Picture id={slide.photo} fill priority={i === 0} sizes="100vw" />
+              <div
+                className="hero-frame absolute inset-0"
+                style={
+                  slide.zoom
+                    ? ({ "--zoom": slide.zoom, "--origin": slide.origin ?? "50% 50%" } as CSSProperties)
+                    : undefined
+                }
+              >
+                <Picture id={slide.photo} fill priority={i === 0} sizes="100vw" />
+              </div>
             </div>
           </div>
         ))}
@@ -24,7 +34,7 @@ export function Hero() {
         {/* One scrim for every slide keeps the type legible without per-image tuning. */}
         <div
           aria-hidden
-          className="absolute inset-0 bg-[linear-gradient(to_top,rgba(11,11,12,0.92)_0%,rgba(11,11,12,0.5)_32%,rgba(11,11,12,0)_60%),linear-gradient(to_bottom,rgba(11,11,12,0.5)_0%,rgba(11,11,12,0)_16%)]"
+          className="absolute inset-0 bg-[linear-gradient(to_top,rgba(11,11,12,0.92)_0%,rgba(11,11,12,0.5)_32%,rgba(11,11,12,0)_60%),linear-gradient(to_bottom,rgba(11,11,12,0.5)_0%,rgba(11,11,12,0)_16%)] md:bg-[linear-gradient(to_top,rgba(11,11,12,0.92)_0%,rgba(11,11,12,0.5)_32%,rgba(11,11,12,0)_60%),linear-gradient(to_right,rgba(11,11,12,0.5)_0%,rgba(11,11,12,0)_55%),linear-gradient(to_bottom,rgba(11,11,12,0.5)_0%,rgba(11,11,12,0)_16%)]"
         />
 
         <div className="gutter absolute inset-x-0 bottom-0 pb-6 md:pb-10">
