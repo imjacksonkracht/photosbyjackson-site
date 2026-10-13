@@ -6,7 +6,7 @@
 // original through the private photos/source-map.json.
 import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import { categories, categoryCovers, projects, selectedWork, type Row } from "../content/projects.ts";
+import { allProjects as projects, categoryCovers, heroSlides, projectLabel, selectedWork, type Row } from "../content/projects.ts";
 
 const root = path.resolve(import.meta.dirname, "..");
 const generated = JSON.parse(readFileSync(path.join(root, "content/photos.generated.json"), "utf8"));
@@ -15,7 +15,7 @@ const photosTs = readFileSync(path.join(root, "content/photos.ts"), "utf8");
 const alts: Record<string, string> = {};
 for (const m of photosTs.matchAll(/"([a-z0-9-]+)":\s*\{\s*alt:\s*"((?:[^"\\]|\\.)*)"/g)) alts[m[1]] = m[2];
 
-const placement = (row: Row) => (row.kind === "offset" ? `offset ${row.side}` : row.kind);
+const placement = (row: Row) => row.kind;
 const orientation = (g: { width: number; height: number }) => {
   const a = g.width / g.height;
   return a > 1.05 ? "landscape" : a < 0.95 ? "portrait" : "square";
@@ -34,9 +34,9 @@ const lines = [
 
 for (const p of projects) {
   lines.push(`## ${p.title}`, "");
-  lines.push(`- Route: \`/work/${p.slug}\` · Category: ${categories[p.category].label}`);
+  lines.push(`- Route: \`/work/${p.slug}\` · Category: ${projectLabel(p)}${p.hidden ? " · **hidden from the site**" : ""}`);
   lines.push(`- Date: ${p.date ?? "not verified"} · Location: ${p.location ?? "not verified"}`);
-  lines.push(`- Client gallery: ${p.galleryUrl ?? "none linked"} · Share image: \`/og/${p.slug}.jpg\``, "");
+  lines.push(`- Client gallery: ${p.galleryUrl ?? "none linked"} · Share image: ${p.hidden ? "none" : `\`/og/${p.slug}.jpg\``}`, "");
   lines.push("| Public name | Path | Size | Orientation | Placement | Also used | Source hash | Alt text |");
   lines.push("|---|---|---|---|---|---|---|---|");
   for (const row of p.sequence) {
@@ -47,7 +47,8 @@ for (const p of projects) {
         p.cover === id && "project cover",
         selectedWork.some((s) => s.photo === id) && "home: selected work",
         Object.values(categoryCovers).includes(id) && "home: category",
-        id === "petty-theft-guitarist-silhouette-01" && "home hero, /og.jpg",
+        heroSlides.some((h) => h.photo === id) && "home hero",
+        id === "petty-theft-guitarist-silhouette-01" && "/og.jpg",
       ]
         .filter(Boolean)
         .join(", ");

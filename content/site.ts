@@ -6,14 +6,14 @@ export const site = {
   photographer: "Jackson Kracht",
   url: "https://photosbyjackson.org",
   email: "jackson@photosbyjackson.org",
-  location: "Gainesville, Florida",
-  locationShort: "Gainesville, FL",
+  location: "Gainesville & Winter Park, Florida",
+  locationShort: "Gainesville & Winter Park, FL",
   university: "University of Florida",
   galleries: "https://galleries.photosbyjackson.org",
   instagram: { handle: "@wpgraphicz", url: "https://instagram.com/wpgraphicz" },
   personalSite: "https://jacksonkracht.com",
   description:
-    "Concert, event, and portrait photography by Jackson Kracht in Gainesville, Florida.",
+    "Concert, event, and portrait photography by Jackson Kracht in Gainesville and Winter Park, Florida.",
 } as const;
 
 export const nav = [

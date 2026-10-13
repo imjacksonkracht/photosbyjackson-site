@@ -17,7 +17,10 @@ export const personLd = {
   jobTitle: "Photographer",
   url: site.url,
   email: `mailto:${site.email}`,
-  address: { "@type": "PostalAddress", addressLocality: "Gainesville", addressRegion: "FL", addressCountry: "US" },
+  areaServed: [
+    { "@type": "City", name: "Gainesville, FL" },
+    { "@type": "City", name: "Winter Park, FL" },
+  ],
   affiliation: { "@type": "CollegeOrUniversity", name: site.university },
   knowsAbout: ["Concert photography", "Event photography", "Portrait photography", "Headshot photography"],
   sameAs: [site.instagram.url, site.personalSite],

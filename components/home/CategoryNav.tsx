@@ -1,22 +1,30 @@
 import Link from "next/link";
 import { Picture } from "@/components/Picture";
+import { coverSizes, photo } from "@/content/photos";
 import { categories, categoryCovers, categoryOrder } from "@/content/projects";
 
 export function CategoryNav({ headingLevel = 2 }: { headingLevel?: 2 | 3 }) {
   const H = headingLevel === 2 ? "h2" : "h3";
   return (
-    <section aria-labelledby="categories-title" className="border-y border-line">
+    <section aria-labelledby="categories-title" className="border-b border-line">
       <H id="categories-title" className="sr-only">
         Browse by category
       </H>
-      <ul className="flex flex-col md:h-[min(82vh,56rem)] md:flex-row">
+      <ul className="flex flex-col md:h-[min(74vh,50rem)] md:flex-row">
         {categoryOrder.map((c) => (
           <li
             key={c}
             className="group/panel relative h-[30svh] min-h-48 border-b border-line last:border-b-0 md:h-auto md:flex-1 md:border-b-0 md:border-r md:transition-[flex-grow] md:duration-700 md:ease-[cubic-bezier(0.16,1,0.3,1)] md:last:border-r-0 md:hover:grow-[2.4] md:focus-within:grow-[2.4]"
           >
             <Link href={`/work/${c}`} className="group absolute inset-0 block overflow-hidden">
-              <Picture id={categoryCovers[c]} fill sizes="(min-width: 768px) 40vw, 100vw" className="zoom" />
+              <Picture
+                id={categoryCovers[c]}
+                fill
+                // A hovered panel grows to ~55vw at min(74vh, 50rem) tall; on
+                // phones each panel is full width and 30vh tall (min 12rem).
+                sizes={`(min-width: 768px) ${coverSizes(photo(categoryCovers[c]), "56vw", "min(74vh, 50rem)")}, ${coverSizes(photo(categoryCovers[c]), "100vw", "max(30vh, 12rem)")}`}
+                className="zoom"
+              />
               <div
                 aria-hidden
                 className="absolute inset-0 bg-ink/45 transition-colors duration-700 group-hover:bg-ink/10 group-focus-visible:bg-ink/10"

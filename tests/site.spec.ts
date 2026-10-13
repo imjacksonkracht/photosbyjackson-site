@@ -1,5 +1,5 @@
 import { expect, test, type Page } from "@playwright/test";
-import { categoryOrder, projects } from "../content/projects";
+import { allProjects, categoryOrder, heroSlides, projects } from "../content/projects";
 
 import { readFileSync, existsSync } from "node:fs";
 
@@ -46,7 +46,7 @@ for (const route of routes) {
 test("every photo referenced by the site exists as public files", async () => {
   const generated = JSON.parse(readFileSync("content/photos.generated.json", "utf8")) as Record<string, { path: string }>;
   const referenced = new Set<string>();
-  for (const p of projects) {
+  for (const p of allProjects) {
     referenced.add(p.cover);
     p.sequence.forEach((r) => ("photos" in r ? r.photos : [r.photo]).forEach((id) => referenced.add(id)));
   }
@@ -89,12 +89,13 @@ test("sitemap and robots are served", async ({ request }) => {
 test("category filter updates the list and the URL", async ({ page }) => {
   await page.goto("/work");
   const filters = page.getByRole("navigation", { name: "Filter work by category" });
-  await expect(filters.getByRole("link")).toHaveText(["All", "Live Music", "Events", "Portraits"]);
+  await expect(filters.getByRole("listitem")).toHaveText(["All", "Live Music", "Events", "Portraits"]);
   await filters.getByRole("link", { name: "Events" }).click();
   await expect(page).toHaveURL(/\/work\/events$/);
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("Events");
   const projectsList = page.getByRole("region", { name: "Projects" });
   await expect(projectsList.getByRole("heading", { level: 2, name: "Gator Grill Club" })).toBeVisible();
+  await expect(projectsList.getByRole("heading", { level: 2, name: "Gator Gallop" })).toBeVisible();
   await expect(projectsList.getByRole("heading", { level: 2, name: "Swamp Fest" })).toHaveCount(0);
   await filters.getByRole("link", { name: "Portraits" }).click();
   await expect(page).toHaveURL(/\/work\/portraits$/);
@@ -102,7 +103,8 @@ test("category filter updates the list and the URL", async ({ page }) => {
   await expect(projectsList.getByRole("heading", { level: 2, name: /Recruitment Portraits/ })).toBeVisible();
   await filters.getByRole("link", { name: "Live Music" }).click();
   await expect(page).toHaveURL(/\/work\/music$/);
-  await expect(projectsList.getByRole("heading", { level: 2, name: "Gator Jam" })).toBeVisible();
+  await expect(projectsList.getByRole("heading", { level: 2, name: /Drake & J\. Cole/ })).toBeVisible();
+  await expect(projectsList.getByRole("heading", { level: 2, name: "Gator Jam" })).toHaveCount(0);
   await page.goBack();
   await expect(page).toHaveURL(/\/work\/portraits$/);
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("Portraits & Headshots");
@@ -111,7 +113,9 @@ test("category filter updates the list and the URL", async ({ page }) => {
 test("sports is gone from navigation and its URLs redirect", async ({ page, request }) => {
   for (const [from, to] of [
     ["/work/sports", /\/work$/],
-    ["/work/gator-gallop-2026", /\/work\/events$/],
+    ["/work/gator-gallop-2026", /\/work\/gator-gallop$/],
+    ["/work/its-all-a-blur-tour", /\/work\/drake-j-cole-its-all-a-blur-tour$/],
+    ["/work/gator-jam", /\/work\/music$/],
     ["/work/headshots", /\/work\/florida-cicerones-general-body-headshots$/],
     ["/work/florida-cicerones", /\/work\/florida-cicerones-recruitment-portraits$/],
   ] as const) {
@@ -123,7 +127,8 @@ test("sports is gone from navigation and its URLs redirect", async ({ page, requ
   await expect(page.getByRole("link", { name: /^Sports/ })).toHaveCount(0);
   const sitemap = await (await request.get("/sitemap.xml")).text();
   expect(sitemap).not.toContain("/work/sports");
-  expect(sitemap).not.toContain("gator-gallop");
+  expect(sitemap).not.toContain("gator-gallop-2026");
+  expect(sitemap).not.toContain("/work/gator-jam");
 });
 
 test("about page shows the behind-the-scenes photo", async ({ page }) => {
@@ -228,4 +233,44 @@ test("reduced motion disables the hero entrance", async ({ browser }) => {
   const duration = await page.locator(".hero-settle").evaluate((el) => getComputedStyle(el).animationDuration);
   expect(parseFloat(duration)).toBeLessThan(0.01);
   await context.close();
+});
+
+test("public pages show no exposure captions or photo counts", async ({ page }) => {
+  for (const route of ["/", "/work", "/work/hcgg-petty-theft", "/about"]) {
+    await page.goto(route);
+    const text = await page.locator("main").innerText();
+    expect(text, route).not.toMatch(/ISO \d|ƒ\/\d|1\/\d+s/);
+    expect(text, route).not.toMatch(/\d+ photo(graph)?s/i);
+  }
+});
+
+test("hero slideshow crossfades without shifting layout", async ({ page }) => {
+  await page.clock.install();
+  await page.goto("/");
+  const slides = page.locator("[data-slide]");
+  await expect(slides).toHaveCount(heroSlides.length);
+  await expect(slides.nth(0)).toHaveAttribute("data-active", "");
+  const before = await page.locator("#hero-title").boundingBox();
+  await page.clock.runFor(7600);
+  await expect(slides.nth(1)).toHaveAttribute("data-active", "", { timeout: 5000 });
+  await expect(slides.nth(0)).not.toHaveAttribute("data-active", "");
+  const after = await page.locator("#hero-title").boundingBox();
+  expect(after).toEqual(before);
+});
+
+test("hero stays on the first slide with reduced motion", async ({ browser }) => {
+  const context = await browser.newContext({ reducedMotion: "reduce" });
+  const page = await context.newPage();
+  await page.clock.install();
+  await page.goto("/");
+  await page.clock.runFor(16000);
+  await expect(page.locator("[data-slide]").nth(0)).toHaveAttribute("data-active", "");
+  await context.close();
+});
+
+test("footer contact link opens the contact form", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("contentinfo").getByRole("link", { name: "Contact" }).click();
+  await expect(page).toHaveURL(/\/contact$/);
+  await expect(page.getByRole("button", { name: "Send inquiry" })).toBeVisible();
 });

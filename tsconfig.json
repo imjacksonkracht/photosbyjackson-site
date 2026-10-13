@@ -18,5 +18,5 @@
     "paths": { "@/*": ["./*"] }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next/dev/types/**/*.ts"],
-  "exclude": ["node_modules", "photos", "legacy"]
+  "exclude": ["node_modules", "photos", "legacy", ".open-next", ".wrangler"]
 }

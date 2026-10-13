@@ -22,7 +22,7 @@ const archivo = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — Concert & Event Photographer in Gainesville, FL`,
+    default: `${site.name} — Concert & Event Photographer in Gainesville and Winter Park, FL`,
     template: `%s — ${site.name}`,
   },
   description: site.description,

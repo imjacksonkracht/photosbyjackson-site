@@ -25,7 +25,7 @@ import { mkdir, readdir, readFile, rm, stat, writeFile } from "node:fs/promises"
 import path from "node:path";
 import exifr from "exifr";
 import sharp from "sharp";
-import { projects } from "../content/projects.ts";
+import { categoryCovers, heroSlides, projects, selectedWork } from "../content/projects.ts";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const SRC = path.join(ROOT, "photos");
@@ -36,6 +36,22 @@ const SOURCE_MAP = path.join(SRC, "source-map.json");
 const SELECTION = path.join(SRC, "selection.json");
 
 const AVIF_WIDTHS = [640, 1280, 2048];
+
+// Photos shown large on the home page (hero, category tiles, Selected Work)
+// get a 2560px tier for retina screens and gentler compression, which keeps
+// film grain and fine detail that AVIF smooths away at lower quality.
+const FEATURED = new Set([
+  ...heroSlides.map((h) => h.photo),
+  ...Object.values(categoryCovers),
+  ...selectedWork.map((s) => s.photo),
+]);
+const FEATURED_WIDTHS = [640, 1280, 2048, 2560];
+
+function profileFor(id) {
+  return FEATURED.has(id)
+    ? { name: "featured", widths: FEATURED_WIDTHS, quality: (w) => (w >= 2560 ? 56 : w >= 2048 ? 62 : 68) }
+    : { name: "standard", widths: AVIF_WIDTHS, quality: (w) => (w >= 2048 ? 52 : 56) };
+}
 const FALLBACK_WIDTH = 1600;
 const HERO = "petty-theft-guitarist-silhouette-01";
 
@@ -89,8 +105,8 @@ function formatExposure(e) {
   return parts.length >= 3 ? parts.join(" · ") : null;
 }
 
-function outputsFor(base) {
-  return [...AVIF_WIDTHS.map((w) => `${base}-${w}.avif`), `${base}.webp`];
+function outputsFor(base, widths = AVIF_WIDTHS) {
+  return [...widths.map((w) => `${base}-${w}.avif`), `${base}.webp`];
 }
 
 // ---------- plan ----------
@@ -129,8 +145,14 @@ async function plan() {
 
 async function processOne(entry, buf, hash, previous) {
   const base = path.join(PUBLIC, entry.urlBase);
-  const files = outputsFor(base);
-  if (!force && previous?.sourceHash === hash.slice(0, 12) && (await Promise.all(files.map(exists))).every(Boolean)) {
+  const profile = profileFor(entry.name);
+  const files = outputsFor(base, profile.widths);
+  if (
+    !force &&
+    previous?.sourceHash === hash.slice(0, 12) &&
+    (previous.profile ?? "standard") === profile.name &&
+    (await Promise.all(files.map(exists))).every(Boolean)
+  ) {
     return previous;
   }
   await mkdir(path.dirname(base), { recursive: true });
@@ -143,11 +165,11 @@ async function processOne(entry, buf, hash, previous) {
   const width = upright ? meta.height : meta.width;
   const height = upright ? meta.width : meta.height;
 
-  for (const w of AVIF_WIDTHS) {
+  for (const w of profile.widths) {
     await img
       .clone()
       .resize({ width: Math.min(w, width), withoutEnlargement: true })
-      .avif({ quality: w >= 2048 ? 52 : 56, effort: 5 })
+      .avif({ quality: profile.quality(w), effort: 5 })
       .toFile(`${base}-${w}.avif`);
   }
   await img
@@ -182,11 +204,17 @@ async function processOne(entry, buf, hash, previous) {
     exposure: camera ? formatExposure(exif) : null,
     lens: camera && exif?.LensModel ? (LENSES[exif.LensModel] ?? exif.LensModel) : null,
     sourceHash: hash.slice(0, 12),
+    profile: profile.name,
+    widths: profile.widths,
   };
 }
 
 async function shareImages(manifest) {
   await mkdir(path.join(PUBLIC, "og"), { recursive: true });
+  const wanted = new Set(projects.map((p) => `${p.slug}.jpg`));
+  for (const f of await readdir(path.join(PUBLIC, "og"))) {
+    if (!wanted.has(f)) await rm(path.join(PUBLIC, "og", f));
+  }
   const jobs = projects.map((p) => [p.cover, path.join(PUBLIC, "og", `${p.slug}.jpg`)]);
   jobs.push([HERO, path.join(PUBLIC, "og.jpg")]);
   for (const [id, out] of jobs) {
@@ -203,7 +231,7 @@ async function shareImages(manifest) {
 async function validate(manifest) {
   const problems = [];
   for (const [id, m] of Object.entries(manifest)) {
-    for (const f of outputsFor(path.join(PUBLIC, m.path))) {
+    for (const f of outputsFor(path.join(PUBLIC, m.path), m.widths)) {
       if (!(await exists(f))) problems.push(`${id}: missing ${path.relative(ROOT, f)}`);
     }
     const webp = path.join(PUBLIC, `${m.path}.webp`);
@@ -266,7 +294,7 @@ async function main() {
   }
 
   // Remove public files that no longer belong to any selected photo.
-  const keep = new Set(Object.values(manifest).flatMap((m) => outputsFor(path.join(PUBLIC, m.path))));
+  const keep = new Set(Object.values(manifest).flatMap((m) => outputsFor(path.join(PUBLIC, m.path), m.widths)));
   for (const dir of [OUT, path.join(PUBLIC, "images", "about")]) {
     if (!(await exists(dir))) continue;
     for (const file of await walk2(dir)) if (!keep.has(file)) await rm(file);

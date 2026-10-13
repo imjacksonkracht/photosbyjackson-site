@@ -152,7 +152,7 @@ export function Lightbox({ ids, index, title, onClose, onIndex }: Props) {
           </div>
 
           <div className="gutter flex min-h-16 shrink-0 items-center justify-between gap-4 py-3">
-            <p className="exposure">{p.exposure ? `${p.lens} · ${p.exposure}` : title}</p>
+            <p className="meta">{title}</p>
             <div className="flex gap-2 md:hidden">
               <button type="button" onClick={() => go(-1)} aria-label="Previous photo" className="h-11 w-11 text-bone">
                 ←

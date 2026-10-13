@@ -163,6 +163,23 @@
   to { opacity: 1; transform: none; }
 }
 .hero-settle { animation: hero-settle 2.2s var(--ease-out-expo) both; }
+
+/* Hero slideshow: stacked slides, crossfaded by toggling data-active. */
+@media (min-width: 768px) {
+  .hero-frame {
+    transform: scale(var(--zoom, 1));
+    transform-origin: var(--origin, 50% 50%);
+  }
+}
+.hero-slide,
+.hero-label {
+  opacity: 0;
+  transition: opacity 1.1s var(--ease-film);
+}
+.hero-slide[data-active],
+.hero-label[data-active] {
+  opacity: 1;
+}
 .rise { animation: rise 1.1s var(--ease-out-expo) both; }
 .fade-up { animation: fade-up 0.9s var(--ease-out-expo) both; }
 
