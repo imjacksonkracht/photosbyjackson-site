@@ -29,14 +29,44 @@ export default function AboutPage() {
           <div className={withPhoto ? "md:col-span-6 md:col-start-7" : "md:col-span-8"}>
             <p className="meta mb-6">About</p>
             <h1 id="about-title" className="display text-[clamp(3.6rem,10vw,9rem)]">
-              Hey, I’m Jackson.
+              Jackson Kracht
             </h1>
             <div className="mt-8 max-w-xl space-y-4 text-lg leading-relaxed text-bone/85">
+              <p>Photographer and University of Florida student, based in Gainesville and Winter Park, Florida.</p>
               <p>
-                I’m a photographer and student at the University of Florida. I shoot concerts, campus events, and
-                portraits.
+                A lot of what I shoot is live music:{" "}
+                <Link className="link-line text-bone" href="/work/hcgg-petty-theft">
+                  Petty Theft at Gator Growl
+                </Link>
+                ,{" "}
+                <Link className="link-line text-bone" href="/work/swamp-fest">
+                  Swamp Fest
+                </Link>
+                ,{" "}
+                <Link className="link-line text-bone" href="/work/live-from-the-lawn">
+                  Live From the Lawn
+                </Link>
+                , and{" "}
+                <Link className="link-line text-bone" href="/work/drake-j-cole-its-all-a-blur-tour">
+                  Drake and J. Cole on the It’s All a Blur Tour
+                </Link>
+                .
               </p>
-              <p>I’m based in Gainesville and Winter Park, Florida.</p>
+              <p>
+                I also shoot{" "}
+                <Link className="link-line text-bone" href="/work/events">
+                  student organizations
+                </Link>
+                ,{" "}
+                <Link className="link-line text-bone" href="/work/portraits">
+                  headshots
+                </Link>
+                , and{" "}
+                <Link className="link-line text-bone" href="/work/portraits">
+                  group portraits
+                </Link>
+                .
+              </p>
             </div>
             <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-line pt-6 text-sm">
               <Link

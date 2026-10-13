@@ -11,8 +11,9 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       // Page on the previous Canva site.
-      { source: "/portfolio", destination: "/work", permanent: true },
-      { source: "/portfolio/:path*", destination: "/work", permanent: true },
+      // Shared widely, so match any capitalization (phones auto-capitalize).
+      { source: "/:p([Pp][Oo][Rr][Tt][Ff][Oo][Ll][Ii][Oo])", destination: "/work", permanent: true },
+      { source: "/:p([Pp][Oo][Rr][Tt][Ff][Oo][Ll][Ii][Oo])/:path*", destination: "/work", permanent: true },
       { source: "/book", destination: "/contact", permanent: true },
       { source: "/booking", destination: "/contact", permanent: true },
       { source: "/work/concerts", destination: "/work/music", permanent: true },
