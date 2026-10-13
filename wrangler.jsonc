@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Preview Worker only. It is served on workers.dev and has no routes or
+  // custom domains, so it cannot affect photosbyjackson.org (still on Canva).
+  "name": "photosbyjackson-preview",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": { "enabled": true },
+  "vars": {
+    // Not secret. RESEND_API_KEY is set with `wrangler secret put`.
+    "CONTACT_FROM_EMAIL": "Photos by Jackson <inquiries@send.jacksonkracht.com>",
+    "CONTACT_TO_EMAIL": "jackson@photosbyjackson.org"
+  }
+}

@@ -1,10 +1,11 @@
 # Photos by Jackson
 
 Portfolio and booking site for Jackson Kracht, photographer in Gainesville, FL.
-Next.js (App Router) · TypeScript · Tailwind CSS v4 · Motion · Playwright.
+Next.js 16.3 (App Router) · TypeScript · Tailwind CSS v4 · Motion · Playwright · Cloudflare Workers (OpenNext).
 
 The current production site at photosbyjackson.org is a separate Canva site. This
-repo is not deployed yet. Client galleries stay on Pixieset at
+repo is deployed only to a preview Worker:
+https://photosbyjackson-preview.jackson-185.workers.dev Client galleries stay on Pixieset at
 galleries.photosbyjackson.org; this site only links to them.
 
 ## Local development
@@ -22,6 +23,7 @@ npm run typecheck
 npm run lint
 npx playwright install chromium   # once
 npm test               # builds, starts on :3200, runs tests/site.spec.ts at 5 widths
+PLAYWRIGHT_BASE_URL=https://photosbyjackson-preview.jackson-185.workers.dev npm test  # test a deployed Worker
 npm run screenshots    # full-page screenshots into screenshots/ (gitignored)
 ```
 
@@ -32,9 +34,8 @@ Everything editable lives in `content/`:
 | File | What it holds |
 |---|---|
 | `content/site.ts` | Name, email, location, social links. Single source for anything shown twice. |
-| `content/projects.ts` | Projects, categories, photo sequences, Selected Work, category covers. |
+| `content/projects.ts` | Projects, categories, photo sequences, hero slides, Selected Work, category covers. `hidden: true` keeps a project's data without showing it. |
 | `content/photos.ts` | Alt text and focal point for each photo, keyed by public name. |
-| `content/galleries.ts` | Pixieset client galleries listed on /work. |
 | `content/photos.generated.json` | Generated: sizes, blur placeholders, EXIF exposure. Don't edit by hand. |
 
 ### Photos: private originals, public derivatives
@@ -90,9 +91,26 @@ the [Resend](https://resend.com) HTTP API. Set on the host (see `.env.example`):
 Until those are set, the route returns 503 and the form tells visitors to email directly.
 It never shows a false success.
 
-## Deployment
+## Deployment (Cloudflare Workers)
 
-Built for a Node host that runs Next.js (Vercel is the simplest fit). All pages
-prerender statically; only `/api/contact` runs on demand. `/portfolio` (the old Canva
-URL) redirects to `/work`; `/work/sports` redirects to `/work` now that sports is no
-longer part of the portfolio.
+The site runs on Cloudflare Workers through the OpenNext adapter
+(`@opennextjs/cloudflare`), which deploys the real `next build` output.
+
+```bash
+npm run cf:preview   # build and serve locally in the Workers runtime (workerd)
+npm run cf:deploy    # build and deploy the Worker named in wrangler.jsonc
+```
+
+- `wrangler.jsonc` names the Worker `photosbyjackson-preview`. It is on `workers.dev`
+  only, with no routes or custom domains.
+- Every page is prerendered, so `open-next.config.ts` serves prerendered pages from
+  Workers static assets (`staticAssetsIncrementalCache`); no KV or R2 is needed.
+- Next.js is pinned to 16.3.8: OpenNext 1.20.10 can't yet run Next 16.4
+  ([opennextjs-cloudflare#1448](https://github.com/opennextjs/opennextjs-cloudflare/issues/1448)).
+- Rollback: `npx wrangler deployments list` then `npx wrangler rollback <version-id>`.
+- `CONTACT_FROM_EMAIL` and `CONTACT_TO_EMAIL` are plain vars in `wrangler.jsonc`.
+  Set the API key as a secret: `npx wrangler secret put RESEND_API_KEY`.
+- Old URLs: `/portfolio` → `/work`; `/work/sports` → `/work`; renamed project slugs
+  redirect to their new pages.
+- vinext (`npx vinext check`: 94% compatible) is Cloudflare's recommended path for new
+  apps; revisit when it leaves beta.

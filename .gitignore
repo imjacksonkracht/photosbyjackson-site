@@ -17,3 +17,12 @@ next-env.d.ts
 .env*
 !.env.example
 
+
+# Cloudflare / OpenNext
+.open-next/
+.wrangler/
+.dev.vars*
+
+# Review screenshots (local only)
+review1-screenshots/
+review2-screenshots/

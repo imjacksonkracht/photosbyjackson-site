@@ -2,7 +2,7 @@
 
 ## Purpose and layout
 
-Portfolio and booking site for Jackson Kracht. Next.js App Router + TypeScript + Tailwind CSS v4 + Motion, tested with Playwright. The 2026 redesign brief approved replacing the earlier dependency-free static prototype (kept for reference in `legacy/`).
+Portfolio and booking site for Jackson Kracht. Next.js App Router + TypeScript + Tailwind CSS v4 + Motion, tested with Playwright, deployed to Cloudflare Workers through OpenNext. The 2026 redesign brief approved replacing the earlier dependency-free static prototype (kept for reference in `legacy/`).
 
 - `app/`: routes (`/`, `/work`, `/work/{music,sports,events,portraits}`, `/work/[slug]`, `/about`, `/contact`, `/api/contact`).
 - `components/`: UI. `content/`: all editable data. `lib/`: shared logic.
@@ -26,7 +26,8 @@ npm run dev
 - Publish client photos only when Jackson has confirmed permission. Mark others `"pending": true` in the selection.
 - Preserve keyboard access, focus handling, alt text, responsive layout, lazy loading, reduced-motion support, and lightbox controls.
 - Never put credentials in client code. Contact delivery secrets are server env vars only.
-- Do not deploy, change DNS, or alter the Pixieset gallery platform without explicit approval.
+- Only deploy the `photosbyjackson-preview` Worker. The Cloudflare account also hosts unrelated production Workers (LexSheet, Kracht); never modify them. Do not change DNS or alter the Pixieset gallery platform without explicit approval.
+- Keep copy short and factual. No project descriptions, exposure captions, or photo counts on public pages.
 
 ## Verification
 
