@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { CSSProperties } from "react";
 import { Picture } from "@/components/Picture";
+import { coverSizes, photo } from "@/content/photos";
 import { getProject, heroSlides } from "@/content/projects";
 import { HeroRotator } from "./HeroRotator";
 
@@ -25,7 +26,14 @@ export function Hero() {
                     : undefined
                 }
               >
-                <Picture id={slide.photo} fill priority={i === 0} sizes="100vw" />
+                <Picture
+                  id={slide.photo}
+                  fill
+                  priority={i === 0}
+                  // Full-screen cover: tall phones render landscape photos far
+                  // wider than the viewport, and the zoomed slide scales further.
+                  sizes={coverSizes(photo(slide.photo), `${Math.round(100 * (slide.zoom ?? 1))}vw`, `${Math.round(100 * (slide.zoom ?? 1))}vh`)}
+                />
               </div>
             </div>
           </div>

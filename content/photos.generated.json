@@ -9,7 +9,14 @@
     "blur": "data:image/webp;base64,UklGRt4AAABXRUJQVlA4INIAAABQBQCdASoUAA0APu1iqU2ppaOiMAgBMB2JbACdMoRwIsBxaumAbxV/pQGx/WsqwiUhZgAA/sxnA2hzpnGmlDqAsSA52eP+XCaqmF+2r9K2F4A1Me/cuLgcS2oqWGB8/8cVYsxDolZMKpJd8E0S8unL3BbnJNxrb2PkTcBpL0dPOfHuhvjqnORA9PnAx2E+YKJKjaM8CwPO8wM1yILKNACHZDBSlaA8JD0ja300m60KXwoEnBOeEOju24zJ8RqOf3091CH/9TT6VD8x99lowFkFgAA=",
     "exposure": "128mm · ƒ/4 · 1/160s · ISO 320",
     "lens": "70–200mm GM II",
-    "sourceHash": "d13d3bec48dc"
+    "sourceHash": "d13d3bec48dc",
+    "profile": "featured",
+    "widths": [
+      640,
+      1280,
+      2048,
+      2560
+    ]
   },
   "petty-theft-lead-vocalist-01": {
     "id": "petty-theft-lead-vocalist-01",
@@ -21,7 +28,14 @@
     "blur": "data:image/webp;base64,UklGRuAAAABXRUJQVlA4INQAAACQBQCdASoUAA0APu1iqU2ppaOiMAgBMB2JbACdMoMYPYEar9QGFt6YBvIQFfGK5XdU94HIIAD+v4z1GI0r2kmg0X+rhMWsofX+iMZipxiP1UYt8CV2+1oeWzSvtnaxs4Va0uBnOCFCcVaIhv/ZNktKonb5juouUIgD6YFhBUT76m+EofC42vp7P88IJVPyuSieCW74Qi1c61nVeuM7jdgWNEv51gJzdsfRHrJL2au+cft+epgj/NeEEdfjrWBZuJw1b1q/0w0/m6DYMZqn8N+MEHUgAA==",
     "exposure": "200mm · ƒ/2.8 · 1/250s · ISO 800",
     "lens": "70–200mm GM II",
-    "sourceHash": "7a8d02072611"
+    "sourceHash": "7a8d02072611",
+    "profile": "featured",
+    "widths": [
+      640,
+      1280,
+      2048,
+      2560
+    ]
   },
   "petty-theft-lead-vocalist-02": {
     "id": "petty-theft-lead-vocalist-02",
@@ -33,7 +47,13 @@
     "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JQBbZBCpoTJ9o/k5GGAAA/vKrpW+NmvS4/HKp2LVygjwf/bcuZSam0R3iCLazxV6orkhdk1NDkYVdMip3Toae/EOa6jG8w9YAAA==",
     "exposure": "200mm · ƒ/4 · 1/250s · ISO 5000",
     "lens": "70–200mm GM II",
-    "sourceHash": "d0447621fb37"
+    "sourceHash": "d0447621fb37",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "petty-theft-lead-vocalist-03": {
     "id": "petty-theft-lead-vocalist-03",
@@ -45,7 +65,14 @@
     "blur": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAAAwBACdASoUAA0APu1iqU2ppaOiMAgBMB2JbACdMoADUpCvE8+XLkz/8XAA/vQp6B/46qr7QpefhqMEYXMznuMiMv+v/rlBiwcd4r9MpHZWFhHu0TI9qEYy8liOvTj5/8e4BVLs0l19k4/2x95DNI8JnfoTCD/NEwlmutU60EiGLLxUbVL4iPIN29omOJppYEx2AoEAAAA=",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 1000",
     "lens": "Samyang 35mm",
-    "sourceHash": "cb8ea59a9abc"
+    "sourceHash": "cb8ea59a9abc",
+    "profile": "featured",
+    "widths": [
+      640,
+      1280,
+      2048,
+      2560
+    ]
   },
   "petty-theft-lead-vocalist-04": {
     "id": "petty-theft-lead-vocalist-04",
@@ -57,7 +84,13 @@
     "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JbAC7ACFRDDZpQ2OgAP70JJlPdghMNIuf1j7eM3twyAJvNJMkJU4Ccqq+ScpSj5OC6+ahvG9wXuvn3eDIIhc2e9Bp+FyoHL6gtnaFixh7cyAAAAA=",
     "exposure": "200mm · ƒ/2.8 · 1/250s · ISO 1600",
     "lens": "70–200mm GM II",
-    "sourceHash": "3b5460c1490b"
+    "sourceHash": "3b5460c1490b",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "petty-theft-lead-vocalist-05": {
     "id": "petty-theft-lead-vocalist-05",
@@ -69,7 +102,13 @@
     "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JaABTAAeZTOiBTDAA/vQlIq+Gl+ii6zsV/TAddnL4ykPfqXZDgM83LH83NChyzEIdD5FXvaCtyq9yQxVlPLegAAA=",
     "exposure": "200mm · ƒ/2.8 · 1/250s · ISO 1250",
     "lens": "70–200mm GM II",
-    "sourceHash": "15bfc8a89748"
+    "sourceHash": "15bfc8a89748",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "petty-theft-lead-vocalist-06": {
     "id": "petty-theft-lead-vocalist-06",
@@ -81,7 +120,14 @@
     "blur": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADwAwCdASoUAA0APu1iqk2ppaQiMAgBMB2JaQAAW+t6gNFnvAhTYcOAAP7yrvI1i7NxhseGgdAh2Pz/WI2uAS26fSoKN2mGQDBOSZOk2ZtFrNnEDqqbxFr/UtHkCz3ZCu+oOWGwv9+PVJ+rUXTQsedet6Z7lNwAAAA=",
     "exposure": "200mm · ƒ/2.8 · 1/250s · ISO 500",
     "lens": "70–200mm GM II",
-    "sourceHash": "443811ce2af3"
+    "sourceHash": "443811ce2af3",
+    "profile": "featured",
+    "widths": [
+      640,
+      1280,
+      2048,
+      2560
+    ]
   },
   "petty-theft-bassist-01": {
     "id": "petty-theft-bassist-01",
@@ -93,7 +139,14 @@
     "blur": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAQBACdASoUAA0APu1iqU2ppaOiMAgBMB2JbACw7Bh1c3oK3rtFlk2EAAD+7QD06C9x2p6Zv6ehCx71NwoawH0ju0vCcKa3ESE7V1Opg0qSVaRIOzFji/XanZO4RsDzycgklltFJC+4E3BvzH6gV/WsDRgSwL709jlHo/hQ/TxAAA==",
     "exposure": "35mm · ƒ/4 · 1/60s · ISO 400",
     "lens": "Samyang 35mm",
-    "sourceHash": "c290213244c4"
+    "sourceHash": "c290213244c4",
+    "profile": "featured",
+    "widths": [
+      640,
+      1280,
+      2048,
+      2560
+    ]
   },
   "petty-theft-keyboardist-01": {
     "id": "petty-theft-keyboardist-01",
@@ -105,7 +158,13 @@
     "blur": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAACQBACdASoUAA0APu1iqU2ppaOiMAgBMB2JbACdMoMpHYS7yqA9xLs+p0Ea30AA/kVX8UcMATmJsyRjGu8JeE+iC27DUH9L/78o7MSe2iPZI/rR49oltiixwfXL6opYhszT8qqUr3Hdzfw/PB9jxjZ1hVJL+uk5UHU0JV8lzhYZMr/Q/ue7FLplhT1Rb6Iy6Czy30DOAAA=",
     "exposure": "84mm · ƒ/2.8 · 1/100s · ISO 125",
     "lens": "70–200mm GM II",
-    "sourceHash": "a8a5f886e2f9"
+    "sourceHash": "a8a5f886e2f9",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "petty-theft-singer-01": {
     "id": "petty-theft-singer-01",
@@ -117,7 +176,13 @@
     "blur": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAACwAwCdASoUAA0APu1iqU2ppaQiMAgBMB2JaQAAW10j0Ie2FGF2wAD+7ofKDYZ40q1qn7C+c6K+64RGzYJhbHteMXcF/Pln2VMH98UqVO7yQAUfnSOeyhKhx7664ZKsggyPVBcPij4X12As5kMjaIx610AAAA==",
     "exposure": "200mm · ƒ/2.8 · 1/250s · ISO 1000",
     "lens": "70–200mm GM II",
-    "sourceHash": "d4787a82fc00"
+    "sourceHash": "d4787a82fc00",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "live-from-the-lawn-trombonist-01": {
     "id": "live-from-the-lawn-trombonist-01",
@@ -129,7 +194,13 @@
     "blur": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACQBACdASoUAA0APu1iqU2ppaOiMAgBMB2JbACdMoR3N6TbgANz+i3TrXJPpQAA6PkSMQsYLzry2YMFTZ3pXkdWqn8LyM3YtZHHU87vvB8hYu7PSIZh4NX1Au4KlD3VF8qhOH6ICv70CXGnuRt5X+QuoAA=",
     "exposure": "35mm · ƒ/5 · 1/800s · ISO 100",
     "lens": "Samyang 35mm",
-    "sourceHash": "f86c02bd5802"
+    "sourceHash": "f86c02bd5802",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "live-from-the-lawn-acoustic-guitarist-01": {
     "id": "live-from-the-lawn-acoustic-guitarist-01",
@@ -141,7 +212,14 @@
     "blur": "data:image/webp;base64,UklGRvoAAABXRUJQVlA4IO4AAAAQBgCdASoUAB4APu1iqE2ppaOiMAgBMB2JQBYeAQI8D3yHZFJ5CJsVt03LeeoRBep5UZcS3bqefkAA+FdGEo5o+weJe29IQR/ugnVZPsBASPufFj3N6PnagN/BTHfC5b8Ok8RqZP8nUF5zOOKTYdlQpxMWYgexw2ZXhH+dcuX8UPi3HWXWxUchc62t11cn9TZ/OHQp4Yr9t412SWRRQVFUE11GTGv+7wvQCQCvvkpjjZtK8SIu4o4k21Rns2PEbNdunQm3yTyO14gpQBv1ToPNVKFbRj/2UTa1TkzLEcexpEfy8zxvgs0+x7NfN2AA",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 200",
     "lens": "Samyang 35mm",
-    "sourceHash": "2597c83ece4d"
+    "sourceHash": "2597c83ece4d",
+    "profile": "featured",
+    "widths": [
+      640,
+      1280,
+      2048,
+      2560
+    ]
   },
   "live-from-the-lawn-acoustic-guitarist-02": {
     "id": "live-from-the-lawn-acoustic-guitarist-02",
@@ -153,7 +231,13 @@
     "blur": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAAAQBQCdASoUAB4APu1kq0+ppSOiMBgIATAdiWkACBAGBH13HCDS6Fij7ZAcv99qCCbAAP6uPa6eJ94j/IEkwQdNub6rIC7RlGL51dQKpDJygPsnQcQLmvZ48crkPhDk+/YMoNJxDVFm86vyj9OUQrLVvXpmDrHS6brctKu8FGbuTca/oa14C/XZDGKDobFEH1NKi+Ug6xyMCUIeBKM1eZwupbwAAA==",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 1000",
     "lens": "Samyang 35mm",
-    "sourceHash": "d6dc20ff42f2"
+    "sourceHash": "d6dc20ff42f2",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "live-from-the-lawn-guitarist-01": {
     "id": "live-from-the-lawn-guitarist-01",
@@ -165,7 +249,13 @@
     "blur": "data:image/webp;base64,UklGRtAAAABXRUJQVlA4IMQAAACQBQCdASoUABcAPu1sq1EppiOiqAqpMB2JYwDKuawWz5n4JsgFtlY0ND04fVVIsSZb3/+yAADjoQcQeXPNjSzqq+QcmSINBw39kKNFn22qmCAkk/Et5VeSb5MqluN0CzulQwdj09PAxZxTHEerfVYewzky57fGrMVaEm/jaM6irGefkwZhFquDfrh0ewvgOpEegrUqtZ9HxhvEyTNHk/tvDgqUjgD9BA2iZLJn5ks+TBif45QskCyR45OAB180UCiGJIAA",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 100",
     "lens": "Samyang 35mm",
-    "sourceHash": "255ed95a51ec"
+    "sourceHash": "255ed95a51ec",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "live-from-the-lawn-guitarist-02": {
     "id": "live-from-the-lawn-guitarist-02",
@@ -177,7 +267,13 @@
     "blur": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAABwBACdASoUAB4APu1eqk2ppKQiMBgMATAdiWkAAI94S0r9G5AUKS7FzdU9wAD+9Hzi0uYV1hXkJktAJ2YgS41T0I1qi2awZUKMG71eEs7SwwQWJEM5P0ALDsyELQJoDk/S9RPBBLUU+EMAqMiPfekoCxttuW3DPCaFaAAA",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 6400",
     "lens": "Samyang 35mm",
-    "sourceHash": "03b6a04b1454"
+    "sourceHash": "03b6a04b1454",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "live-from-the-lawn-guitarist-03": {
     "id": "live-from-the-lawn-guitarist-03",
@@ -189,7 +285,13 @@
     "blur": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADwAwCdASoUAA0APu1iqU2ppaQiMAgBMB2JYwCsABmZIy59xrdgSyqgAP6N4DvnhSGHNa3q5Cn0f+P8A7W26tL/CIwjgoLOt1m83BD3vUAZVa3TqFuQleOHzRIcWPzMcc2yP3Szc2pkr6fxHNKJxLZZvNEiJmOYiqtaEfcUsILdGwAA",
     "exposure": null,
     "lens": null,
-    "sourceHash": "b818967c5d1a"
+    "sourceHash": "b818967c5d1a",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "live-from-the-lawn-bassist-01": {
     "id": "live-from-the-lawn-bassist-01",
@@ -201,7 +303,13 @@
     "blur": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAABQBQCdASoUAB4APu1qr1AppaSiqAqpMB2JYwDGQYyfWvYCPmJqy51fE8CiC446bFzSLYAA/vHNf+SM8gqw3ETpnmMj3N0+I/M3xn/J7mqcvf8X0G4V4zt5QdYtVFS+hEXgJgLcQPKVK8NwCFL2m/eZhKQ6Tmk2/TlDoNpePx96RjsMu0rMbZCUEMmdKIqDA5cEXFuXU1W7cGmm40U6dnO4xOV8AkgR67r0HMZAds8KUi/wpcBt9Jv94x82EC6TSaEAAA==",
     "exposure": "35mm · ƒ/4.5 · 1/160s · ISO 100",
     "lens": "Samyang 35mm",
-    "sourceHash": "70977317f3cd"
+    "sourceHash": "70977317f3cd",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "live-from-the-lawn-bassist-02": {
     "id": "live-from-the-lawn-bassist-02",
@@ -213,7 +321,14 @@
     "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABwBQCdASoUAB4APu1mqk8ppaOiKA1RMB2JaQALAEcAT5FJ4R+GfBvsN+AxjbjwbRp9FPsAAP73c0jW8LZvxXbzhLmlY62mgDXKGd0Wt4vZIk+zgMCx/DbvkxQz2/rUd51giF/MRjrkcauL8iU4jYo3HuTf1DSKZieZDdji2ZTj3pJQoclUO6bR5NHQrlVZ5tOr4fKc6+WlrfuylE/SydEXBu4heDAAAAA=",
     "exposure": "35mm · ƒ/2 · 1/160s · ISO 2500",
     "lens": "Samyang 35mm",
-    "sourceHash": "331fba865a38"
+    "sourceHash": "331fba865a38",
+    "profile": "featured",
+    "widths": [
+      640,
+      1280,
+      2048,
+      2560
+    ]
   },
   "live-from-the-lawn-guitar-detail-01": {
     "id": "live-from-the-lawn-guitar-detail-01",
@@ -225,7 +340,13 @@
     "blur": "data:image/webp;base64,UklGRvoAAABXRUJQVlA4IO4AAACwBQCdASoUAB4APu1qrlCppaQiqAqpMB2JQBdkBO9XioDJPAMAgR2Z8AzBjS3SzLXvmiVy8IAA/vhU+9l3k2la3tyRSmiuEpFzDYSklCYToB6Jmpl6L1pFM8tTPfktE96e96CiBVjp0359cjkv9JlIYjh63NcK8XgXfg0SfToPt4TLg0a4V4Dm0jIpjkZZVLiwt8QOS194T08VcKItfAic2IkhBPi7nrV5enHzuPGKyekFt7JL93V7OflI0rYlQZhpaRGXY69qeNt3J1XkjPS/VBGJDdMuHhAhCgtamJG0VNEDlE9bbqSpkjYXvwAA",
     "exposure": "35mm · ƒ/4.5 · 1/320s · ISO 100",
     "lens": "Samyang 35mm",
-    "sourceHash": "fef41e3ab2a8"
+    "sourceHash": "fef41e3ab2a8",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "live-from-the-lawn-guitar-detail-02": {
     "id": "live-from-the-lawn-guitar-detail-02",
@@ -237,7 +358,13 @@
     "blur": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAADwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JYwCdAYyAY8Q3R5P2Xq+AAPa+us6ljKYgnqmGUgp/86iNz1oBRIGqqmcgmpUvJ/Uez9UZCAiAQVfZlJHgrvBJyY+XHPUSYZf/ph0ZKlnWb5nz4z3QU0iOAwObi9oyRVEC34ECWfIcwH0QYn0Dhq1wAAA=",
     "exposure": "35mm · ƒ/4 · 1/60s · ISO 320",
     "lens": "Samyang 35mm",
-    "sourceHash": "5b4ee4ba8d0b"
+    "sourceHash": "5b4ee4ba8d0b",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "live-from-the-lawn-table-setup-01": {
     "id": "live-from-the-lawn-table-setup-01",
@@ -249,7 +376,13 @@
     "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAQBACdASoUAA0APu1iqU2ppaQiMAgBMB2JYwC7ACLTxguS9y5SOJy5zAD2ju9MB0seYXwl1HieSJUvFlSGemAVsrxYUG3ecWsL2tv3KGqe6lleXmL1XvAF3smfSsAaBySXTP3zI41/VdaH8qsutzv3i4cgtpbyRGsWXTLPMBahjC2sR4K4+JAA",
     "exposure": "35mm · ƒ/4.5 · 1/200s · ISO 100",
     "lens": "Samyang 35mm",
-    "sourceHash": "163a61b3d469"
+    "sourceHash": "163a61b3d469",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "swamp-fest-co2-cannons-01": {
     "id": "swamp-fest-co2-cannons-01",
@@ -261,7 +394,14 @@
     "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAABwBACdASoUAA0APu1iqk2ppaQiMAgBMB2JQBahC5wVorn31/uUbI04c6iVwAD+9DKqd1qpJlx5G2x9pBQQjGvkl04oqyxSr+HFljc7SsFFuwVK/7PKYX4WFBVxd7x8qsxv2X9PkTXDe6D3p5tYc2ZsQ3tlKxsPjkp07aIkgbIJdbXRNrLbSwAA",
     "exposure": "44mm · ƒ/2.2 · 1/160s · ISO 1600",
     "lens": "E 35-150mm F2.0-F2.8 A058",
-    "sourceHash": "734cb0fc8f21"
+    "sourceHash": "734cb0fc8f21",
+    "profile": "featured",
+    "widths": [
+      640,
+      1280,
+      2048,
+      2560
+    ]
   },
   "swamp-fest-crowd-01": {
     "id": "swamp-fest-crowd-01",
@@ -273,7 +413,13 @@
     "blur": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAQBACdASoUAA0APu1iqU2ppaOiMAgBMB2JagCdH8AC8qIY4c8WhlkiwAD+8NNy+ZVBx5+3VCVe9eMsxM37JY4mi3XM4L01aJfd/uQjLmhMz31MRF+rP/3KcMF2UF+XMwznAU9rOZi/9wBvhIr0F6ZoPBKetwzzhupg435AKY0AAA==",
     "exposure": "150mm · ƒ/2.8 · 1/160s · ISO 8000",
     "lens": "E 35-150mm F2.0-F2.8 A058",
-    "sourceHash": "66e3fb0f43b6"
+    "sourceHash": "66e3fb0f43b6",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "swamp-fest-crowd-02": {
     "id": "swamp-fest-crowd-02",
@@ -285,7 +431,13 @@
     "blur": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAQBACdASoUAA0APu1iqU2ppaOiMAgBMB2JagCdMoACoONpY//1yjJMAAD+8rTR6sRPkCNOYPzUiXnDbgdC6CeB05jY1B1keykapONVZjb19fKr3eb3wVOYqg4946247LU3lgBfRbgGiy/t7Bs3hXjza6SthBycAAA=",
     "exposure": "150mm · ƒ/2.8 · 1/60s · ISO 12800",
     "lens": "E 35-150mm F2.0-F2.8 A058",
-    "sourceHash": "3a3a8ef6769c"
+    "sourceHash": "3a3a8ef6769c",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "swamp-fest-crowd-03": {
     "id": "swamp-fest-crowd-03",
@@ -297,7 +449,13 @@
     "blur": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAACwBACdASoUAB4APu1srFEppaQiqAqpMB2JagCsABEl4HduWZZ/WGzjFBluu7IAAP7ulr2CgpD4BPj9hQEsZye0JNXVDdu/B7JqLD871sgL/CyiA9AhU2Z8A3FF9dDCjFdvYSdJC1Nt5tXfzpkPCumI4FAZHMYovJd3tocdogddr+EViyDCMbnA4TOjux2tDFdA8qRSjFH7B4AAAAA=",
     "exposure": "38mm · ƒ/2 · 1/125s · ISO 12800",
     "lens": "E 35-150mm F2.0-F2.8 A058",
-    "sourceHash": "b83eb92b63be"
+    "sourceHash": "b83eb92b63be",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "swamp-fest-dj-set-01": {
     "id": "swamp-fest-dj-set-01",
@@ -309,7 +467,13 @@
     "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JYgDE2CHh9lirzFoqAAD+8rdreUXT3epV5gfnySiy4zAKPIecaDlA/dz5YucVq5/uQXlcTL+4MfOo/aAAAA==",
     "exposure": "150mm · ƒ/2.8 · 1/160s · ISO 2500",
     "lens": "E 35-150mm F2.0-F2.8 A058",
-    "sourceHash": "d06b046e4b3d"
+    "sourceHash": "d06b046e4b3d",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "swamp-fest-dj-set-02": {
     "id": "swamp-fest-dj-set-02",
@@ -321,7 +485,13 @@
     "blur": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAABwBQCdASoUAB4APu1kqU2ppaOiMAgBMB2JYgAD5enZ7a4tj7TnybrOokYruuECL9BE3OEAAP7uroomteaYr3ay/dVuKxxfD3e6VG+jUd0U1DkVBcwF6RKl+/9AsEf8A6uXYJYnmV2/stcm16uX0cvKzPGvM0JbOoXeqhUGHVQiAJATIroR7zcdRhtizuJSPhi3HcT+2nL904Gc8mfZGnxxktyZJBHSYZ4g8tQ9ypX8ZyN9UWffOZQz+o5anRM4AAA=",
     "exposure": "150mm · ƒ/2.8 · 1/160s · ISO 4000",
     "lens": "E 35-150mm F2.0-F2.8 A058",
-    "sourceHash": "d6b477b4903b"
+    "sourceHash": "d6b477b4903b",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "swamp-fest-stage-performance-01": {
     "id": "swamp-fest-stage-performance-01",
@@ -333,7 +503,13 @@
     "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABQBQCdASoUAB4APu1qrVCppaQiqAqpMB2JaQAIEDiAL0QQ7b3S08lx9nACnhHukhyqgAAA/vhIzvL1Hx6phk14vEQ+dy76Ta83tD6DkKuBDO1Tm5FlB5/JdovvGfIU4q9ERZ7bGxE0WDDvbWSAUSiC7GmkUgRNoBWqO+0A5DkD+Cefl/FHTPvJ6mM+DvhtAKeeaDn7Gb/6QxUIUNsXQ0aOTI3HLs/RSOZoIIGCVAAAAA==",
     "exposure": "150mm · ƒ/4 · 1/160s · ISO 2000",
     "lens": "E 35-150mm F2.0-F2.8 A058",
-    "sourceHash": "de0f45c53429"
+    "sourceHash": "de0f45c53429",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "swamp-fest-stage-performance-02": {
     "id": "swamp-fest-stage-performance-02",
@@ -345,7 +521,13 @@
     "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACwAwCdASoUAA0APu1iqk2ppaQiMAgBMB2JaQAAWp+HWQzsnN7kAAD+8MumJFuuCV4NAWNLnw/Q3Cc23NXQ3HIGj2U/BDGEW15zpESjp+jC0GfnA4RgAAAA",
     "exposure": "150mm · ƒ/2.8 · 1/160s · ISO 5000",
     "lens": "E 35-150mm F2.0-F2.8 A058",
-    "sourceHash": "07a43b3bef67"
+    "sourceHash": "07a43b3bef67",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "swamp-fest-stage-performance-03": {
     "id": "swamp-fest-stage-performance-03",
@@ -357,7 +539,13 @@
     "blur": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAADwBACdASoUAB4APu1irFCppSQisBgIATAdiWkAA+VDLv66SRYk/GquZyoHA/kld4AA/vVmO0ayQEOdK0EQ3nuRsYqISKPPo+u/pW/OCeTZOYf8llfrFYEtRNuHn8WqINIDiveEZ4bN9zJHeuVNVYEnYRq5jy60JO8ZZiBIxV1IDet6f5SYnIWRIMjPAAAA",
     "exposure": "129mm · ƒ/3.2 · 1/160s · ISO 12800",
     "lens": "E 35-150mm F2.0-F2.8 A058",
-    "sourceHash": "1632090eb16e"
+    "sourceHash": "1632090eb16e",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "swamp-fest-main-stage-01": {
     "id": "swamp-fest-main-stage-01",
@@ -369,7 +557,13 @@
     "blur": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADQAwCdASoUAA0APu1iqU2ppaQiMAgBMB2JZwAAXy5ddoo3nvaarIAA/sGHgSUW8EHDSFr+7aRqLNxTEwKwLYe5lgKHoMIbt7B/5UfssevLhqRjLlEt86XShYVmG9jodv1sby8Dn+FdwTfIsHfjpojDEfOPPkLgAAA=",
     "exposure": "150mm · ƒ/3.2 · 1/160s · ISO 1600",
     "lens": "E 35-150mm F2.0-F2.8 A058",
-    "sourceHash": "bfcbd6cabe3f"
+    "sourceHash": "bfcbd6cabe3f",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "swamp-fest-main-stage-02": {
     "id": "swamp-fest-main-stage-02",
@@ -381,7 +575,13 @@
     "blur": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAQBACdASoUAA0APu1iqU2ppaQiMAgBMB2JaACdAywBoWA68pAv0pTOXAD+8zLbM6Z7vqro4o7YpwKW4ABP8tRxon3WpdG0vWYyClIf44BSbGKWuFm90bChH63uaqDlf93j4+EMVqs774bUt2Zmd4h+x4J4+HtCUiTWwJdjzmRpiNAA",
     "exposure": "47mm · ƒ/4 · 1/60s · ISO 8000",
     "lens": "E 35-150mm F2.0-F2.8 A058",
-    "sourceHash": "014aa838d0c0"
+    "sourceHash": "014aa838d0c0",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "swamp-fest-festivalgoers-01": {
     "id": "swamp-fest-festivalgoers-01",
@@ -393,7 +593,13 @@
     "blur": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAwBACdASoUAA0APu1iqU2ppaOiMAgBMB2JQBdgBEP2W9lbdjrEUWdp5gAA/kncsc4upAFGVYoxFS1iimkAdI5fu6FS3U9Ou17ymPLlfeENPIhLmUmeB1RaDtpgLR57eeVmU1nZvPEcoKg5QTCGEnCHkQEa5i7XAjN3JRDoAAA=",
     "exposure": "86mm · ƒ/2.8 · 1/80s · ISO 12800",
     "lens": "E 35-150mm F2.0-F2.8 A058",
-    "sourceHash": "8412ceb034c7"
+    "sourceHash": "8412ceb034c7",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "its-all-a-blur-tour-arena-stage-01": {
     "id": "its-all-a-blur-tour-arena-stage-01",
@@ -405,7 +611,14 @@
     "blur": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAACwBACdASoUABsAPuFeqU2opSQiMAwBEBwJaQAAKoMOP5phNnDr/QPg8RPBsbxwAP1P0InMAsOE3FS/A9+7xfUXUZuZHs+cr4eHFbY3hUUUp6tpdhWbQUMD+R+HwyDUSr5js4rav73i5v868yhdh2SHqMwleQusyERwBkEAAAA=",
     "exposure": null,
     "lens": null,
-    "sourceHash": "dbd84c20691f"
+    "sourceHash": "dbd84c20691f",
+    "profile": "featured",
+    "widths": [
+      640,
+      1280,
+      2048,
+      2560
+    ]
   },
   "its-all-a-blur-tour-arena-stage-02": {
     "id": "its-all-a-blur-tour-arena-stage-02",
@@ -417,7 +630,13 @@
     "blur": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADwBACdASoUACQAPu1oqE8ppiOiMBVaqTAdiWkAAH5Ask7qJzdY/r29u+DWLcgofQAA/vd3zMbp63Nct/DqgEhUJRi3dUBII26PWWNOSTDGx5COWONscFLJPUCIY1b5/QsgXk9aaxY+q2pLvWfvhxSlaNpZXyJWKMrtoAAA",
     "exposure": null,
     "lens": null,
-    "sourceHash": "4ab7efbecffe"
+    "sourceHash": "4ab7efbecffe",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-jam-band-01": {
     "id": "gator-jam-band-01",
@@ -429,7 +648,13 @@
     "blur": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADQAwCdASoUAAsAPu1iqU2ppaOiMAgBMB2JaQAASp/wIAREKAthFAAA/u0KMED+TkpyMsVmjW5V4J2f7OGGouK5u71UwaheA3OHbbZp3n08oB0MkCOPJFEoqUenvBWfvIb3EkStF/RewWjO77K9Q1OWXCwgjvf37lIQAAAA",
     "exposure": null,
     "lens": null,
-    "sourceHash": "7ee81e457b49"
+    "sourceHash": "7ee81e457b49",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-jam-keyboardist-01": {
     "id": "gator-jam-keyboardist-01",
@@ -441,7 +666,13 @@
     "blur": "data:image/webp;base64,UklGRk4BAABXRUJQVlA4IEIBAADwBgCdASoUACQAPu1qrVCppaQiqqgBMB2JaAC+wy52BekyaHCtMIjXnxhNCAhfUMoZcWJfeLEIzY8fBVUJgLsAAP70J080XH/QjK+NS7ChFd8dabwQ5Gk0ZqSKrjjyon7V411eH4UKfUryVZEztX7O5eau2C/prKb65D4ZIlW00NvlDyjMWw3YpYOyZF6o56c7D8CZyinb2TJ7Y68f2y9QdIcmm6KgC5l0I1LS167oF3MQZRmka/xE4SXJkgOzikdDZzXyK5yibtIlwHRHtchLwm7Ff6X8/bYl83MDx3t9Uu/Ow5oZYLQ0p2fRObB/ag9qrEX34iuwd1tmBDZ7BuUANwZbapZ0nrgEyJclBU7R0uR2I2rZ/usokWGjhaCaBuo44FY/Igy5JBEf8/+h4Z+5Q0CXf/8nJJuw4rxZ9XJCgAAA",
     "exposure": null,
     "lens": null,
-    "sourceHash": "fa9cc891c6ac"
+    "sourceHash": "fa9cc891c6ac",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-jam-guitarist-01": {
     "id": "gator-jam-guitarist-01",
@@ -453,7 +684,13 @@
     "blur": "data:image/webp;base64,UklGRv4AAABXRUJQVlA4IPIAAADwBQCdASoUACQAPu1urlIppiQipWsxMB2JZAC90YwnM0IYvP8txFkyk2Pq0tSOob1cNs78NoUMAAD++Ra9smSh7Z1nrvVdT+HeHmbb0winrI1qudTCgiU9LWBHXwyMEIGM4C2vFwnO4OvYgzwHKpB3iMEql57wOECHAxUwZ/Ow4LPXW/ceQPKB9zNMHJhkP9cM+zvrYsYveZKRXqt69YvU6/236WashKjlz4GzLUv9jnEp1h5TroMs9ujCgFCX0MXMv7zo/i2SR6P0XoqyacuUSC9cGjo4i5ewIhxfuAdMhyKfrmc3ZEISkIrQ9d/XuEZoAA==",
     "exposure": null,
     "lens": null,
-    "sourceHash": "43d086f43104"
+    "sourceHash": "43d086f43104",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-jam-stage-01": {
     "id": "gator-jam-stage-01",
@@ -465,7 +702,13 @@
     "blur": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAAAwBQCdASoUACQAPu1oq04ppiQiKqwBMB2JQBltA8YlCGp+dIrKqDtcfgxkVKJf8VF9wAD+8HR3wBNsFKHegf0AJfXSrH4+Eg8UZWlUSX0y92pp7Fhv8zllRwE1XomhnAwCZNj6GIADEFZ8ncW8T70N8CL52vJt+BpwS3zuKN8E27AbGWoe6Gja7m7PmGJLQaDVfc8ovmW0AAAA",
     "exposure": null,
     "lens": null,
-    "sourceHash": "55e0a49c612d"
+    "sourceHash": "55e0a49c612d",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-grill-club-cookout-01": {
     "id": "gator-grill-club-cookout-01",
@@ -477,7 +720,14 @@
     "blur": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAABwBACdASoUAA0APu1iqU2ppaOiMAgBMB2JYgClrdwLgnWuxK6puCk5hFOIAAD9U2V+Enda3Lx0xtkRqExF5EjEc4ERfwxkB82YfYEjVWwkYHKrcIN2Kg2J8WvRnvIcnWXe7uycch0A0ULXXchcYMdJnL9O6vsBGCPuJwq6Ym2mfdEIJ8/7nGpqUPPAEcCUkklriQsQuoAAAA==",
     "exposure": "35mm · ƒ/4.5 · 1/320s · ISO 100",
     "lens": "Samyang 35mm",
-    "sourceHash": "7f10710b8a2c"
+    "sourceHash": "7f10710b8a2c",
+    "profile": "featured",
+    "widths": [
+      640,
+      1280,
+      2048,
+      2560
+    ]
   },
   "gator-grill-club-cookout-02": {
     "id": "gator-grill-club-cookout-02",
@@ -489,7 +739,13 @@
     "blur": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAADQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JQBOkGxAnQFz++8zrQwAA/tp5fyoZxfvrcHptAkS9s+4Wl2btHmZ4VLvXDftSKJonQt83vSwqVgHGX71fvmk+CCJKn1N9zR1P0wD0SLnAuO7eubH7cKnvdI4JvOwLe3fQX+3AEnlp67WksgAAAA==",
     "exposure": "35mm · ƒ/4.5 · 1/320s · ISO 100",
     "lens": "Samyang 35mm",
-    "sourceHash": "48403476b026"
+    "sourceHash": "48403476b026",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-grill-club-cookout-03": {
     "id": "gator-grill-club-cookout-03",
@@ -501,7 +757,13 @@
     "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBACdASoUAA0APu1iqU2ppaQiMAgBMB2JZAC7IDZgrROejMxWAThhAfgAAP7o7oxdOxwUPQnKGYVggawqSDCTy9fO5KckYqy1iwS5CJgFUCqn2U3HbnK3VYmOXNTcvvqBWlRw5X56nKUWywm837MGWjzkT5OiDcfASTwjQ/ahb0+L8qPlH1eb+apwraymyl27pVCYsZdCjNnb2rid9DRIsfIJQL4AAAA=",
     "exposure": "35mm · ƒ/4 · 1/200s · ISO 100",
     "lens": "Samyang 35mm",
-    "sourceHash": "26c509c6aa27"
+    "sourceHash": "26c509c6aa27",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-grill-club-cookout-04": {
     "id": "gator-grill-club-cookout-04",
@@ -513,7 +775,13 @@
     "blur": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAAAwBACdASoUAA0APu1iqU2ppaOiMAgBMB2JbACw7Yww1OShNA+I5Vt6ZAAA999IkJ5B61tVjX+sHjPfZuhYeL+Cq1OTcmV992pIW8muNueBDMNC+awZ11HkLAzyySKUMVfRPk4JsDgGfA8hRGh1CtJhESA1Q0YSKtqfUCiQaD1nFqJPZOzIoXwuE3t2uZtyZfoyoFoAAAA=",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 100",
     "lens": "Samyang 35mm",
-    "sourceHash": "b1451410c862"
+    "sourceHash": "b1451410c862",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-grill-club-cookout-05": {
     "id": "gator-grill-club-cookout-05",
@@ -525,7 +793,13 @@
     "blur": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAABwBACdASoUAA0APu1iqU2ppaOiMAgBMB2JbACsH8GJ/gPl02YKWB+jkaUbbAD+8dts3CR1J24y/AtGhEKh9ZY8C3kHUk9h/bYy81krHonpMbZqemk8p4eyqTN7FnhzqocHrcHRM6h6raK7pBMdabpCqVDAnz2yJTpBrZMwmjWF5ODamS378aUAGy9xLRYbTj+tUgMAAAA=",
     "exposure": "35mm · ƒ/4.5 · 1/200s · ISO 100",
     "lens": "Samyang 35mm",
-    "sourceHash": "6c6c24c59dff"
+    "sourceHash": "6c6c24c59dff",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-grill-club-live-grilling-sign-01": {
     "id": "gator-grill-club-live-grilling-sign-01",
@@ -537,7 +811,13 @@
     "blur": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADQAwCdASoUAA0APu1iqU2ppaQiMAgBMB2JZACdABMt36IkeF/fOoAA9qXYNJQozLOzGcaPBf5t76gCyZbL/t0bqj9lZ2VEP+tL/MVqGHs2451pXrqmmptSvuRdJ43pZwS8HpCsZ5L3l2/8MFANN5gz6Fp0DWUidsTCjAAA",
     "exposure": "35mm · ƒ/5 · 1/200s · ISO 100",
     "lens": "Samyang 35mm",
-    "sourceHash": "d649ecc1bbc2"
+    "sourceHash": "d649ecc1bbc2",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-grill-club-grill-01": {
     "id": "gator-grill-club-grill-01",
@@ -549,7 +829,13 @@
     "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADQAwCdASoUAA0APu1iqU2ppaQiMAgBMB2JZACdAB9vzDJEeKjtoAAA+TMxbDhmuWKR25j6qH318pu8AGPVY1DPV1evTAuTa8i9wz7l/ZDjIdL7rIiFJIYN9bV2JawdEWepOCjchp8YFwfXfW4B2VvhXnPvboYpxNlIIcBC3jVJdNP3ubpQAAAA",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 100",
     "lens": "Samyang 35mm",
-    "sourceHash": "9742b1eadf56"
+    "sourceHash": "9742b1eadf56",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-grill-club-grill-02": {
     "id": "gator-grill-club-grill-02",
@@ -561,7 +847,13 @@
     "blur": "data:image/webp;base64,UklGRhABAABXRUJQVlA4IAQBAADwBQCdASoUAB4APu1qrFEppaQiqAqpMB2JZACdIPRcARQAQrUE+p8qt+r9HK+CNiYhFolnC6loAAD+3yWT4nB2ijwZz6/WLu/Yo4iWXMZ7h9SnMOm05xfRHX0ZHa2qL3ZQhXH7wsgguydfHvc+fGTqroqqJ73bGRxSdyY5GuHjF9mn8+bsO1Y2v6YqG+XILExmos9yvg2Fj7edaC4JDTZ7rbLlR3cCjAlK88M7y1t3mR+0a7cyxu7Pn8Wfxyj4bdPcIJA8mtNtr5KOZVFq/tcLI2frW55P/uZGmgGzvIfU1Fvygx3XbiHp/Wdee5qWsiLfve8fYXKF4MxlOGatiVEqMmAAAA==",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 125",
     "lens": "Samyang 35mm",
-    "sourceHash": "2f50ec575cc2"
+    "sourceHash": "2f50ec575cc2",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-grill-club-food-01": {
     "id": "gator-grill-club-food-01",
@@ -573,7 +865,13 @@
     "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JbACdMoADVN/ruaaQ6togAP13soE6SQse2SeSNnVN9C3s3yqw9v2EYOHysI9CqGPS/D5NkMfigWYq1xxHEqUl+PyrFm8MzAYFriKJK95/snCdHDEhFtWd0etKydh07DKKPeyPTYuu4mJcPSYwAAAA",
     "exposure": "35mm · ƒ/4.5 · 1/200s · ISO 100",
     "lens": "Samyang 35mm",
-    "sourceHash": "40ad20000d7c"
+    "sourceHash": "40ad20000d7c",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-grill-club-food-02": {
     "id": "gator-grill-club-food-02",
@@ -585,7 +883,13 @@
     "blur": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAABQBACdASoUAA0APu1iqU2ppaOiMAgBMB2JbACdMoMljEh6mJ/d4UCiulYAAOHWsjDBmwR9Y4FuOlTEqpEfMeFq9CHOawEpaYTc9iWN25D4HW86dumG9u+Uj2wfDriMEEvgz+kMVjlkVn7rUgw280DmFOALniF2I2DNjwchIgPct3qVTpQM5HLPwx1bzQgkASSAPNkKAAA=",
     "exposure": "35mm · ƒ/5 · 1/400s · ISO 100",
     "lens": "Samyang 35mm",
-    "sourceHash": "acb8494ad29c"
+    "sourceHash": "acb8494ad29c",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-grill-club-food-03": {
     "id": "gator-grill-club-food-03",
@@ -597,7 +901,13 @@
     "blur": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAACQBACdASoUAA0APu1iqU2ppaOiMAgBMB2JYgC7MoMxgExDEb11P58MRje5cOAA/s8Yu4f45VrGsAcDIRDj+cx1EEDXl4bDTDwV6KlGAe9ggSUpsW/ctChfqoMFvX8RzjwzMhI4ivR7wnOKsbPvvhmovc0LbAr2VMaS9zHWeha2tpiQm/ujg66aKlBu6XZ6R2WaBMH5BrwQBXYOoAA=",
     "exposure": "35mm · ƒ/4.5 · 1/400s · ISO 100",
     "lens": "Samyang 35mm",
-    "sourceHash": "56bd0d7f7588"
+    "sourceHash": "56bd0d7f7588",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "homecoming-parade-cheerleaders-01": {
     "id": "homecoming-parade-cheerleaders-01",
@@ -609,7 +919,14 @@
     "blur": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAADwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JbAC2z3gGxyJ7k2+swtUYAP7XhcpxlYyT9bBchKfzupZGrbTd5C8I1yf8MQQ3YN9nqsHX0NZaLZkKv/GfgmimLZHxeVmA0n1or59/Knj+2krHaqdeHh50BvqHzFJqaR/DFla0oETWptLg8CMPmd5mFjF6p3U2+6YMwsTWzHQlBvRQm3XMgAAA",
     "exposure": "70mm · ƒ/4.5 · 1/1600s · ISO 100",
     "lens": "70–200mm GM II",
-    "sourceHash": "001a2c4e2588"
+    "sourceHash": "001a2c4e2588",
+    "profile": "featured",
+    "widths": [
+      640,
+      1280,
+      2048,
+      2560
+    ]
   },
   "homecoming-parade-mascots-01": {
     "id": "homecoming-parade-mascots-01",
@@ -621,7 +938,14 @@
     "blur": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAABwBACdASoUAA0APu1iqU2ppaOiMAgBMB2JbACdMoMrZDYPflKTy0gM1Uh94ADhOrToVy5VgYnQnIc+xxhl0bUTNLrt15yW/SNWgHs/MktlBRq0mxmeSQg1rdVc45ybun14HM3upBrdgxRjZZTv/iTugW049yFKW5TuDvUoMY0ZsOpEfP4+2orXaE+U48Y9urX4W/Oj7YAPNWAA",
     "exposure": "200mm · ƒ/5 · 1/320s · ISO 100",
     "lens": "70–200mm GM II",
-    "sourceHash": "a2670fbcd2e7"
+    "sourceHash": "a2670fbcd2e7",
+    "profile": "featured",
+    "widths": [
+      640,
+      1280,
+      2048,
+      2560
+    ]
   },
   "homecoming-parade-float-01": {
     "id": "homecoming-parade-float-01",
@@ -633,7 +957,13 @@
     "blur": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAAAwBACdASoUAA0APu1iqU2ppaOiMAgBMB2JaACsDiAAH6FFUuH+n18HoAAA/uUwmxxnHJA6USt9zX09fPSJxacTKm7z7sdqey0Y83at6m51ue50+JmvbkeVft99HfLFrkwDxhB1dHz53wdxDwuTXjXXuTDtBgA1AJ5URGd7Xo8fDpRd5YvhIN2NwV/K673WlFx8z04F4a+AAA==",
     "exposure": "92mm · ƒ/4.5 · 1/400s · ISO 100",
     "lens": "70–200mm GM II",
-    "sourceHash": "ad44792d3416"
+    "sourceHash": "ad44792d3416",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "homecoming-parade-float-02": {
     "id": "homecoming-parade-float-02",
@@ -645,7 +975,13 @@
     "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAABQBACdASoUAA0APu1iqU2ppaOiMAgBMB2JaAAML+DZj6arpyRKuH/OY1joAP7d7Ot6rYdhKsc80jiKjjuS27beMNyWjq94xHa6xbquYMAdTuIPgKaC291jBKoYQjmdzcb3zNIdr1sTFZYJXUJzzROAi8wO6NxdTzcgC7Cnz652O/b+zfnYAAAA",
     "exposure": "158mm · ƒ/4 · 1/160s · ISO 100",
     "lens": "70–200mm GM II",
-    "sourceHash": "94b5b6c2c9c3"
+    "sourceHash": "94b5b6c2c9c3",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "homecoming-parade-float-03": {
     "id": "homecoming-parade-float-03",
@@ -657,7 +993,13 @@
     "blur": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JbAC/OB0kqpAaH8BVxa8QAP7r/48fYA4p06FrJZja+b78XCBKuzL07F9lgu1W3JRJ7DizPgtZ67GMn44avezHsxM2WIMIu+22jdaLUrugIKGHekEjZSOt8RHHQFhjMRy9lZkL2AA=",
     "exposure": "125mm · ƒ/4.5 · 1/400s · ISO 100",
     "lens": "70–200mm GM II",
-    "sourceHash": "4627933c4496"
+    "sourceHash": "4627933c4496",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "homecoming-parade-float-04": {
     "id": "homecoming-parade-float-04",
@@ -669,7 +1011,13 @@
     "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAQBACdASoUAA0APu1iqU2ppaOiMAgBMB2JZQAAYdgQsv17cS60Zn5KAAD+6ExPRJ6Em+7WoMULQjttCuTnRKrhisAmcF5sFzazm7NIejytCC66U1aAlDhUh1OSWWVcYVvDxIErz+ZfowcHYUFxSWYglE5obGqkfsIg/uxayeMOi8Ny8J87AAAA",
     "exposure": "89mm · ƒ/4.5 · 1/640s · ISO 100",
     "lens": "70–200mm GM II",
-    "sourceHash": "8b77c2ae7d8c"
+    "sourceHash": "8b77c2ae7d8c",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "homecoming-parade-marching-band-01": {
     "id": "homecoming-parade-marching-band-01",
@@ -681,7 +1029,13 @@
     "blur": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAAAwBACdASoUAA0APu1iqU2ppaOiMAgBMB2JQBdgA3ZNgLFJWl97T14WGgAA/qM0lR8TaUZIBc+FZZxOdlNE1+wGjEyJM6HwrEoCMMhVz9+d/kWuCUiXuOuEFDDHzpi8DukDyEUzLhPVzEQoUT9oqm5QSfjAzi+BYSl2n4/8HgeukgNEu/KVRUT09eREmxFcAAA=",
     "exposure": "200mm · ƒ/4 · 1/320s · ISO 100",
     "lens": "70–200mm GM II",
-    "sourceHash": "ac38306ec9a6"
+    "sourceHash": "ac38306ec9a6",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "homecoming-parade-spectators-01": {
     "id": "homecoming-parade-spectators-01",
@@ -693,7 +1047,13 @@
     "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JaAC06CDb2NKiVd6joAAA/u7ZuHff+pTRT7OicYpBLsaa+RvQWUVEOtZzVehYpmSSSwYg36QTk9ANukzBzaXela/Ucwwo4mhewP5CEyPv7o6MYpEAAA==",
     "exposure": "152mm · ƒ/4.5 · 1/1000s · ISO 100",
     "lens": "70–200mm GM II",
-    "sourceHash": "fc7c189bfaa9"
+    "sourceHash": "fc7c189bfaa9",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "homecoming-parade-police-escort-01": {
     "id": "homecoming-parade-police-escort-01",
@@ -705,7 +1065,13 @@
     "blur": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAwBACdASoUAA0APu1iqU2ppaOiMAgBMB2JYwAu/8B6HsiwvqE488E+bAAA/tzL30K7+8fFyGbjRc6fvSozAK0aa4jRLAooLMx5UI+aWvl1KxkOMZdzHIs+lE4HxRFipuw7ALC0PoM8Hi+7CwDGZkRtRkW7dYh38cM6BHt8CHWq0P7hP26+gvVM0j91UAAA",
     "exposure": "197mm · ƒ/4.5 · 1/250s · ISO 100",
     "lens": "70–200mm GM II",
-    "sourceHash": "a9e0e4edc53d"
+    "sourceHash": "a9e0e4edc53d",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "campus-organization-group-portrait-01": {
     "id": "campus-organization-group-portrait-01",
@@ -717,7 +1083,13 @@
     "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAABQBACdASoUAA0APu1iqU2ppaOiMAgBMB2JQBfJMYiZVherfLwv8hPvsYOAAPkkDDIK48bxr8aMjtd+Dg2SLuoiztBt5PaRh6sPo4nEBfc4vaasCZwrRS/8odeiFIHCtyrNQoe1FDmQWESs+RY4zsjFfh86VbtZrzvjmZw/ASPxHq3olUc6SYAA",
     "exposure": null,
     "lens": null,
-    "sourceHash": "eb48cac5dbd7"
+    "sourceHash": "eb48cac5dbd7",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "campus-organization-group-portrait-02": {
     "id": "campus-organization-group-portrait-02",
@@ -729,7 +1101,13 @@
     "blur": "data:image/webp;base64,UklGRvwAAABXRUJQVlA4IPAAAADwBQCdASoUAB4APu1mqk2ppaQiMAgBMB2JYgC1G47vQTQ4rSt6qm/WQn/ZwDkEJQjzRFk8BtysAAD88V/xvy7PVKnwtuSDgAOVImMMSrIFINiVq6xDld0xiYUseObpKnkCyYYr9+JnpfXBgD4mJzDDCOuuLRAg+FjtiKROvniW158SzLOpLaZVtJoGS402MljibD0txQiILZrIbdA1VtWq0QrD0UnOFkh7R8BRGac2Pta3Et9f7EShz5InkMTFE1vquNbnXneW1BTvX6L5q3L5zPtCTr6m302btbkvKPEbVfeROImkB2Yv5QJrCgwAAAA=",
     "exposure": null,
     "lens": null,
-    "sourceHash": "146d1e5ae9e8"
+    "sourceHash": "146d1e5ae9e8",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "campus-organization-gator-chomp-01": {
     "id": "campus-organization-gator-chomp-01",
@@ -741,7 +1119,13 @@
     "blur": "data:image/webp;base64,UklGRuAAAABXRUJQVlA4INQAAABwBQCdASoUAB4APu1kqE2ppaOiMAgBMB2JYwB2AAhOw8K7Y7zvmuN+25vPqKAohgFFfkQAAPz/8BfG0gwrGng80E7XPrkOyL9F/6GGC6uQPzaUPx//1pNz5QJ0C+BSFQVy8irrlVDlasgrCp1lKgL7QuC4cQvVXn8gcNDF7eEj6HcoMynAgvm7r63GoMnlN1cihWxMQZZMPMPcJddpybstmO49EYDE7UqnlXe8hlpirc/AW1ibufyqPQ/UhlpUEBilzo0No7FpdJexmwT1cjD8DsAAAA==",
     "exposure": null,
     "lens": null,
-    "sourceHash": "073a7cd40555"
+    "sourceHash": "073a7cd40555",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "florida-cicerones-recruitment-group-portrait-01": {
     "id": "florida-cicerones-recruitment-group-portrait-01",
@@ -753,7 +1137,13 @@
     "blur": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAQBACdASoUAA0APu1iqU2ppaOiMAgBMB2JYgCdB6gAs/Crl48I8vlQ4AD+fdxSSzGv4X/kTJpakdcZlTcBzGJR1T9Qb46wIsXXz52xDmsi+/HNIK7BemEZrI23tetvrcDnbvSQFgt3/q9aSRKtruQVAZgAAA==",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 200",
     "lens": "Samyang 35mm",
-    "sourceHash": "b1073ad9eda5"
+    "sourceHash": "b1073ad9eda5",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "florida-cicerones-recruitment-group-portrait-02": {
     "id": "florida-cicerones-recruitment-group-portrait-02",
@@ -765,7 +1155,13 @@
     "blur": "data:image/webp;base64,UklGRvwAAABXRUJQVlA4IPAAAADQBQCdASoUAB4APu1kqU2ppaOiMAgBMB2JYgC7M5Bv/i2VFJe3ZAO79VeWPfX5Bl5QCIS3iaiAAMrz7e4i6o86MYeQkNEyEWBgDXNQ0yeyad4bKgg9LZos85rfGyp0HxfZqSPEGHzZPB/yfWeuhG7oZFkch5W2chM8UYE5Cm5v4IPJDjE4F/6x9Gv3LD81eNyZ5MKIB+EkH64KkqRHy8DfoY8nf0KlIOuD8FsN2XwtmKt8tWqCMeTRwerS6DveJNrxad2DvsTYDriVM4DbCNMfRZpYeARcblZPSlgOIALBKYQ3vYWofg+xD7NYWWe4AAA=",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 200",
     "lens": "Samyang 35mm",
-    "sourceHash": "b054d112c84f"
+    "sourceHash": "b054d112c84f",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "florida-cicerones-recruitment-group-portrait-03": {
     "id": "florida-cicerones-recruitment-group-portrait-03",
@@ -777,7 +1173,14 @@
     "blur": "data:image/webp;base64,UklGRugAAABXRUJQVlA4INwAAACQBQCdASoUAB4APu1oq08ppiOiMBgIATAdiWIAeM4CF1Qlr7oq72vrVNzLwYyBL9GdPvBpQAD+rAmdc+IduM2Fwnod9pwDybwYxQmmHn4X6/ovJ3MK/ohaaJnb/+8+SVJliuFAf3Dn1SME3WOCJo0vD8/+kavZeEnXaYOoeMNy1hltrDwH+ncCnk0v1GQNy7MLZNwf0n+4BhpYZZwKpqkXA2rI11EtzrlAy3R1w5zHS1OCNMOaSY42s9MydU4/oqDV1vIDzg50vtVc456IL24lvnr4PxrYVDaDhwAA",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 200",
     "lens": "Samyang 35mm",
-    "sourceHash": "777639b80957"
+    "sourceHash": "777639b80957",
+    "profile": "featured",
+    "widths": [
+      640,
+      1280,
+      2048,
+      2560
+    ]
   },
   "florida-cicerones-recruitment-group-portrait-04": {
     "id": "florida-cicerones-recruitment-group-portrait-04",
@@ -789,7 +1192,13 @@
     "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAwBACdASoUAA0APu1iqU2ppaOiMAgBMB2JQBYdg+TvF4BF52Fe+CqNqAAA/Zia+tyfEyCzORAnTH0I4Y/dHVzdQ/ae/I38FIZ1LstewSi/oII+r18c7HWmoZ6YGUvA4WSweNprJlU6FDKzRnKvtlny5JmJdBFhfY5gAA==",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 200",
     "lens": "Samyang 35mm",
-    "sourceHash": "6e707f2dc623"
+    "sourceHash": "6e707f2dc623",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "florida-cicerones-recruitment-group-portrait-05": {
     "id": "florida-cicerones-recruitment-group-portrait-05",
@@ -801,7 +1210,13 @@
     "blur": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAwBACdASoUAA0APu1iqU2ppaOiMAgBMB2JQBOmUAZgAcjFt6gHAqP9TwAA/qJm3AFJYpGAk8rBrZB0vz0dS8oitMvOSunuHz2t+Pu84Ukjj2GTSjKOsgTS2LsGQcEY1mHuImH2l0w6lEhJCkaVvwyVaFXbqOK/Bs9Z6gEnXQAAAA==",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 200",
     "lens": "Samyang 35mm",
-    "sourceHash": "cb8acee8fe5b"
+    "sourceHash": "cb8acee8fe5b",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "cicerones-general-body-headshot-01": {
     "id": "cicerones-general-body-headshot-01",
@@ -813,7 +1228,14 @@
     "blur": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAAAwBQCdASoUAB4APu1krE+ppSQiMBgIATAdiUAABHdrxQi6w0LsUnNYO84Iv3TT+bhRwAD+FSHGhl/+uaxd38czx4YL2h1kmSXg5TxheJCVYb/ee5FQ6aIwNVlN7oj2TM+3ftFCB0RjrkAWhEe3JoyIs/eCvssQtEtLNu0Vl55fBfuFhspqKQXfcIIBid0W1MW5QdeBzJoS8MOsFN3i8bGrqbQ2XuH//mcS2Zg6Uq0mTrdQVem5IQAA",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 320",
     "lens": "Samyang 35mm",
-    "sourceHash": "ebc2e66fa114"
+    "sourceHash": "ebc2e66fa114",
+    "profile": "featured",
+    "widths": [
+      640,
+      1280,
+      2048,
+      2560
+    ]
   },
   "cicerones-general-body-headshot-02": {
     "id": "cicerones-general-body-headshot-02",
@@ -825,7 +1247,13 @@
     "blur": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAAAwBQCdASoUAB4APu1qrlCppaQiqAqpMB2JYgCdBa6AnuSRkewgwduXQSsp86NB+TgusAD+2VySduGEjJ8xYPpk4EVDQVcN0mcBWW8F+3E7Bi2FNArHP/y3xI7VgVSlc6vP1kg0/zhS3G+UlDtC47/Lyp8aMIz3anYVkQ62fS3r2fQNa4QAXu1Aw2P1YywQ+8MmtUkTglKtNTbhtsCiM8wELiRjEgL3ae7nn71fBd5DYB8fFUU4FPqxeMLGvPsAAAA=",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 320",
     "lens": "Samyang 35mm",
-    "sourceHash": "e7f946e0aac9"
+    "sourceHash": "e7f946e0aac9",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "cicerones-general-body-headshot-03": {
     "id": "cicerones-general-body-headshot-03",
@@ -837,7 +1265,13 @@
     "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACwAwCdASoUAA0APu1iqU2ppaQiMAgBMB2JQBOgA4lPvmDTEueGAAD+wCR7hG2u50Im/NF/eZ/95Ao2ZCnXRnVggKYFQ7f+zC36707Nup4xhcZ6YxYzA8XSMs8IcZCguXAAAA==",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 320",
     "lens": "Samyang 35mm",
-    "sourceHash": "cab2f534f3f2"
+    "sourceHash": "cab2f534f3f2",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "cicerones-general-body-headshot-04": {
     "id": "cicerones-general-body-headshot-04",
@@ -849,7 +1283,13 @@
     "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAwCdASoUAA0APu1iqU2ppaQiMAgBMB2JYwCdACLvK9NI4/JNpxoAAP6BY8gQSWRMD8YUWzGnW/ZWzjFmhtbRof+OaSrFfclnAyYX+OVbZ0zwuoYaP2FSrUn5aednboxd+AAA",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 200",
     "lens": "Samyang 35mm",
-    "sourceHash": "b8a863664630"
+    "sourceHash": "b8a863664630",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "cicerones-general-body-headshot-05": {
     "id": "cicerones-general-body-headshot-05",
@@ -861,7 +1301,13 @@
     "blur": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAAAwBQCdASoUAB4APu1qr1AppiSiqAqpMB2JYwCo9A+AWuA7tcLI6OuYM33xO0QToNMiAAD+4006WyX13UWlXM72UEqGBIWFqSfSdfWuGxeGbw+IxFZGfFh/+rLtJAoezvu6H0Zdj9iPbikfX7HqXDemFLXNIFbpKXvwL/MzugRNkqTifxIbraSzua6BZDnUYvSiwesVTnELszbAQm3b3VSwn/PqNhkO1J0oKgBlMisIQSxA2Lum8rPha26SFo2AAAA=",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 250",
     "lens": "Samyang 35mm",
-    "sourceHash": "4a4c1c93ea33"
+    "sourceHash": "4a4c1c93ea33",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "cicerones-general-body-headshot-06": {
     "id": "cicerones-general-body-headshot-06",
@@ -873,7 +1319,13 @@
     "blur": "data:image/webp;base64,UklGRtQAAABXRUJQVlA4IMgAAABQBQCdASoUAB4APu1ur1IppiQiqAgBMB2JQBOmUAAvYUp0k8febwm6uOfh9fpnsmS5lSgA/p7zVZwjSEJhoc/3n4jYGk/nRkTxsBp6zJhuTTCvykPp2v3ru3srRAtBYwO4bx9DpNImSt16tWnGpbMaz0IpMkexLvXjA/jvMiuAGNWstc7aC3fSzheGNCUfv5d4wXHSSieEkUALeaw1tk36h3Wwwp0YC+cjlLH/g/RBSeUey11YoaWY8MMmZEuHRQo6Tl+uFcIAAA==",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 160",
     "lens": "Samyang 35mm",
-    "sourceHash": "c490c2d1ef03"
+    "sourceHash": "c490c2d1ef03",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "cicerones-general-body-headshot-07": {
     "id": "cicerones-general-body-headshot-07",
@@ -885,7 +1337,13 @@
     "blur": "data:image/webp;base64,UklGRt4AAABXRUJQVlA4INIAAACQBQCdASoUAB4APu1qr1AppaSiqAqpMB2JYwCo9Avs/oGvcHy6PsoA+LiTkR9KagMjOm78AADOIlfPPyV7sZOuWJwFzB47Bw/Ven9pYF7T79hYjLCx8e8M8JSVzwFrHY+zncwys3qo+j14gsBbGOfqrMoxMS+KtvZqZBuYfBGX8M/ztWtvARh8AzyBkeDvOE7Ei6t53r7MLEjTriN86DnIaN/ztvqiWE+0fzHl3ndlynVlPXnBdltKPYYAl91YSkG6uX8DNUT+i1f9lII9ADmKAAA=",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 320",
     "lens": "Samyang 35mm",
-    "sourceHash": "17dfef8b6956"
+    "sourceHash": "17dfef8b6956",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "cicerones-general-body-headshot-08": {
     "id": "cicerones-general-body-headshot-08",
@@ -897,7 +1355,13 @@
     "blur": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAABQBQCdASoUAB4APu1mqk2ppaQiMAgBMB2JYwC7AB4mBM3mDrFl0ztnq40V06S5bndD4MAA/svoE8EH7DA5AVTG72hlouVwbJSJoTvZl89BY6oK6GCUXIhom99rQo6GIViJAdFf2eCdh4c7awngfDbAETV6Jmo0PYyhtGL/Kk4dI9Cgi+pM2zsEDl47eLfKnzdRk8U5cksTtIgtu5QGsh1LzwOFBQAA",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 250",
     "lens": "Samyang 35mm",
-    "sourceHash": "9aa02d67899a"
+    "sourceHash": "9aa02d67899a",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "cicerones-general-body-headshot-09": {
     "id": "cicerones-general-body-headshot-09",
@@ -909,7 +1373,13 @@
     "blur": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAABQBQCdASoUAB4APu1wsFIppiSiqAgBMB2JYgCdMoSCmAt8Q6hyajaB68zD9W2cUSgnCgAA/p48Ty8eC1YhT6WkCUmMTB+rns87ipicTy6bnhLiEnsyN0cC67NFNcjfO0SBt2kMM7ox58FNBPSknFPpSxf/WS7eByzR6jrC0yndxO3sjbv5LRAIg9F6SlNR6jWUHpysBjOFex1FxlMC9APNFTN6d5CuewbPZtL8kjsqHoTVHeANPdXEYTclwAAA",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 160",
     "lens": "Samyang 35mm",
-    "sourceHash": "eaa0c7c27aac"
+    "sourceHash": "eaa0c7c27aac",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "cicerones-general-body-headshot-10": {
     "id": "cicerones-general-body-headshot-10",
@@ -921,7 +1391,13 @@
     "blur": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAADQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JQBOmUABMO8O048FAzcAA/Yvh84HaYitVn6/WzT1nYC/VqIzHk9dmHp1emAt4ShvB0R5OUVSHc47GL5B0AXkOJaI0fRQECYe93+J+6pysPwWDZ7H6vQbEq+QAAA==",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 200",
     "lens": "Samyang 35mm",
-    "sourceHash": "bc9021b1b463"
+    "sourceHash": "bc9021b1b463",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "cicerones-general-body-headshot-11": {
     "id": "cicerones-general-body-headshot-11",
@@ -933,7 +1409,13 @@
     "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQBACdASoUAA0APu1iqU2ppaOiMAgBMB2JZQC06CBj4HL19pHdykIRgAD+fBez/9DUq2ChDyBHM2aHT+o/jhkxNOdfid2sGpEFUquUpGljBroJzlIxwAAA",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 160",
     "lens": "Samyang 35mm",
-    "sourceHash": "92d44fb98711"
+    "sourceHash": "92d44fb98711",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "cicerones-general-body-candid-01": {
     "id": "cicerones-general-body-candid-01",
@@ -945,7 +1427,13 @@
     "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JYgCdAB1xTWnhk8qh0wAA2/92aOxTa7o1OqgqZko50nQ6hwgOJ8Wvw+eO0eUd3yvCuoqXq9SF9uC/gJvabviavZgnTdOpJegKanf5Y/2ut4yrirgdEwfsvYGCG+mCcYZ8FuBv/1G0Ep9hFFTkAAAA",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 160",
     "lens": "Samyang 35mm",
-    "sourceHash": "96a0ae5ed06d"
+    "sourceHash": "96a0ae5ed06d",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "cicerones-general-body-duo-portrait-01": {
     "id": "cicerones-general-body-duo-portrait-01",
@@ -957,7 +1445,13 @@
     "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADQAwCdASoUAA0APu1iqU2ppaQiMAgBMB2JZQDImBh2YQhGGbCH4SAA/p7YvsdU01jnhKZiSJgAheVrBWpcPI9dnjOwz6HAaSnBu8ODCxPLfDASnzkqllh5JxDyVavVRxpIAeeAAAA=",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 125",
     "lens": "Samyang 35mm",
-    "sourceHash": "426229932b34"
+    "sourceHash": "426229932b34",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "cicerones-general-body-mascot-01": {
     "id": "cicerones-general-body-mascot-01",
@@ -969,7 +1463,13 @@
     "blur": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAADQBQCdASoUAB4APu1kqk2ppaQiMAgBMB2JagDE2mwJUAUyur9j4ns1vrTiApB5ULiB9N7EpwdQAP2Yk/d5w6+6GQoJy3QAy35LYhQVVMonLMnLcSvuu8R06KMkfowAVq6WBNHg+3q4G7XJw5L0FynDorL89DqS0gcxKrMN5OyU2JeNI4/0P9t0jrgYcLqbswwmvAkbR8UxhcBXdKRhRqCPI8LO33axNa5nZBIsCjTedQDI++xUflz2ATcAmVdf4Hz6smQiou92JDrgAAA=",
     "exposure": "35mm · ƒ/4 · 1/160s · ISO 160",
     "lens": "Samyang 35mm",
-    "sourceHash": "6807fd1da880"
+    "sourceHash": "6807fd1da880",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-gallop-runner-01": {
     "id": "gator-gallop-runner-01",
@@ -981,7 +1481,13 @@
     "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JQBahGQBgKaWQNdfCi//oAP7Q3RBrLztvH53bev3BusZZaOJKX5Br1kPpfUWwLtprVUUz+xUN1dgzCaJF1nZBG6Lh2u+/bDueiw4k4vHtoEns/Jxuw3E3Tm6+g1CLot538MC0v406uFLZ1oF/4AAA",
     "exposure": "200mm · ƒ/4 · 1/250s · ISO 100",
     "lens": "70–200mm GM II",
-    "sourceHash": "dc5c4d1183b7"
+    "sourceHash": "dc5c4d1183b7",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-gallop-start-line-01": {
     "id": "gator-gallop-start-line-01",
@@ -993,7 +1499,13 @@
     "blur": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAAAQBACdASoUAA0APu1iqU2ppaOiMAgBMB2JbACw7BtY2x8fBTuchbj8cAD8BQtKGD/d5bx4aCBzEn5wtHu17oHoSSp+iQNiDmpV+nuNJ6qMOKbQBOCGWyaQtzjQF2xYzHJFvZv2HKTgSgiPKqpY/cQntMtfKl+27e+XXHkVX6b590fpLvdzmOavfygAAA==",
     "exposure": "91mm · ƒ/4 · 1/160s · ISO 100",
     "lens": "70–200mm GM II",
-    "sourceHash": "fc36896392ee"
+    "sourceHash": "fc36896392ee",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-gallop-check-in-01": {
     "id": "gator-gallop-check-in-01",
@@ -1005,7 +1517,13 @@
     "blur": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAADwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JaACdACLvyAvb/Q84PZwAAP7dyoIVu7oOfmKt8p673zjy9isH9uVS4gIntsPLD4L030N0quaTWVFDWBc86bbwlG3NJJqe8HTK/UOKYh5EOHO3EbQb4iBrDb9dU7aRYX5t3G+SHfBv04YF0u0LtWfmVj8r9398/f6BRBQkAAA=",
     "exposure": "92mm · ƒ/4 · 1/160s · ISO 100",
     "lens": "70–200mm GM II",
-    "sourceHash": "d34e946e0e6c"
+    "sourceHash": "d34e946e0e6c",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-gallop-runner-02": {
     "id": "gator-gallop-runner-02",
@@ -1017,7 +1535,13 @@
     "blur": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JQBOmUABpzCHFNDgmOmLoAP6ISYVxwN+YSXU7HdE2C/BCVeubWs4JIEiVWO9gdHZlzQJYcTYImw9UYCdM4oT+FIjLHzMsmLJBimDgXlWwydOnhhS8Hz7WLIE8BFhhlAA=",
     "exposure": "185mm · ƒ/4.5 · 1/500s · ISO 100",
     "lens": "70–200mm GM II",
-    "sourceHash": "78586fc33945"
+    "sourceHash": "78586fc33945",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-gallop-runners-01": {
     "id": "gator-gallop-runners-01",
@@ -1029,7 +1553,13 @@
     "blur": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAAAwBACdASoUAA0APu1iqU2ppaOiMAgBMB2JZACdAYyomfS1flCWF0Zh/ngA/uPpdGhMQwryuyds/nwa1wzDO71qxnxIqoLnO8IYRdHrQXyoIXRsUQi/rprNf6ONrm4VeY/oQCnLkinTRPmmewGltv/nZdDyuN/F6cz4GHC/qffl7E4f/6diO8p+TXqQqUOAy2A93C9/gCJp4SAA",
     "exposure": "200mm · ƒ/4.5 · 1/640s · ISO 100",
     "lens": "70–200mm GM II",
-    "sourceHash": "121b3f00a99e"
+    "sourceHash": "121b3f00a99e",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-gallop-runners-02": {
     "id": "gator-gallop-runners-02",
@@ -1041,7 +1571,13 @@
     "blur": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAACwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JQBWABH1OrejKXb6AQAD9uvZZgpoqiNkjQd9Ra7EvZkzyrWjd27+fIi/ehO/nUvd5s68JgABzYC1sU14D0/DPsjliMDTW0OgWiybKUfDSmeAXBL4cfCAw+tFkOw5ss4vSVFvDU/YwWDBA5vAzQAJ1aGUnzgAA",
     "exposure": "200mm · ƒ/4 · 1/400s · ISO 100",
     "lens": "70–200mm GM II",
-    "sourceHash": "09977b799248"
+    "sourceHash": "09977b799248",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-gallop-high-five-01": {
     "id": "gator-gallop-high-five-01",
@@ -1053,7 +1589,13 @@
     "blur": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAwBACdASoUAA0APu1iqU2ppaQiMAgBMB2JbACsAYwwlhQuUMj5bIPnyFAA/uNQBrqZc83VJZuyCTLgGP7BMBiUyMMnKPVyARTR3uz3yVwWHSrKQKU1RTvHYzRkbkxeJAH/kY/O9MYCblXtRdtopi3EwTTV5wSTxNH7OFVR8KyppxCidOHvu1ACSAA=",
     "exposure": "200mm · ƒ/4 · 1/250s · ISO 100",
     "lens": "70–200mm GM II",
-    "sourceHash": "0d12c0ebf065"
+    "sourceHash": "0d12c0ebf065",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-gallop-runners-03": {
     "id": "gator-gallop-runners-03",
@@ -1065,7 +1607,13 @@
     "blur": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JYwCdAYxEtsYT9nh67IgA/uwPA2yGlkMNRlMCu0j547rzrXbq7Z4QOsAeD/P6ZTagKUTSuR9jaDWqsq0MkK1rWw2hM5YNCkt7bL+bX7KhPL70g5QwJQrTSJ/DZKJAiiHsT0gAAAA=",
     "exposure": "197mm · ƒ/4.5 · 1/400s · ISO 100",
     "lens": "70–200mm GM II",
-    "sourceHash": "25d83c100d5e"
+    "sourceHash": "25d83c100d5e",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-gallop-runners-04": {
     "id": "gator-gallop-runners-04",
@@ -1077,7 +1625,13 @@
     "blur": "data:image/webp;base64,UklGRhwBAABXRUJQVlA4IBABAAAQBgCdASoUAB4APu1gp02ppSMiMAgBMB2JbAC1GoM6JnoPAAL0AMyp9GjzlrPjMklPrz7v/u12eAgA/u7C+mMqWKr98tQJrmgA1TCsRhm36qGFnBbxYiHCIsFh5xqVVNdMm9k9cBJXzmJSg6ENwAXnfbapBQWSSNQePxvNMytweyv/Gf72XmQbqbfEAOpaAwAPJy1ipbUgA6abCa00RPKmIaGs1DNmG/wYKVEVgfaxYk1DizBL3o7UDKqi9BKvgC6HfQ9cOq/k4RqsqWjO9MPlyAPGSorFeoG7Aq6IsntZGxSyjQE8/q7/IpdAPjzwTEgUOv8ekcRfDWhYeVE03S08PKreEqBrS4gU/fhgdT0AAA==",
     "exposure": "138mm · ƒ/4.5 · 1/640s · ISO 100",
     "lens": "70–200mm GM II",
-    "sourceHash": "a2fedcbc0885"
+    "sourceHash": "a2fedcbc0885",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "gator-gallop-finishers-01": {
     "id": "gator-gallop-finishers-01",
@@ -1089,7 +1643,14 @@
     "blur": "data:image/webp;base64,UklGRhgBAABXRUJQVlA4IAwBAABQBwCdASoUAB4APu1krE+ppSQiMBgIATAdiWwAnTKDzOaxqJ7WhNAgAHXkItWkaRFpLJ1sMi72DAL2FoScrJPjXUIAAO0O4f6VPAMtZqGC77L3guKutkxwIjpR+nlgypoFgYZt0YOekgM/uX1Yfz3uA39U9ZmZDtKV78GCgAukhr2zQtXd5f6JGAREnkVyIXUoxMjpytZpwimpXvOMXK7qCFcsFcHmjJQK954OxhGd80ddcXD6sALIX3ompRU6WvYKiOhi82EX1PHtVPkY8THkisoAWPegW2kW1w0Ult4U8Re4pq79zcEuw0+Rv/tm6nQrlVQq9fHuEQgOxOc0ASc/kVwJURMl0fIcGAAA",
     "exposure": "178mm · ƒ/4.5 · 1/500s · ISO 100",
     "lens": "70–200mm GM II",
-    "sourceHash": "a97bda6cf0ef"
+    "sourceHash": "a97bda6cf0ef",
+    "profile": "featured",
+    "widths": [
+      640,
+      1280,
+      2048,
+      2560
+    ]
   },
   "gator-gallop-dog-01": {
     "id": "gator-gallop-dog-01",
@@ -1101,7 +1662,13 @@
     "blur": "data:image/webp;base64,UklGRvYAAABXRUJQVlA4IOoAAADwBQCdASoUAB4APu1mqU2ppaQiMAgBMB2JbACdIQdDAss1E5ow4D5Xx/d0BSbBYMCJkkLxIn9MAAD+46ZTKozP415kGnEdpu2YjVQp+m2gQ1eT6XxhNJMFZyOsE+6fEH6FkRLp9tLJMh3dyMUrePGBcG9cu0wFEqLJCLieRbz+GAB+ytPiqVm+YGvK8VwfbfRa2ukL7/5sZkktLWZHxVWQCUl8ahrJHPcxCPVfVfQ9nHup2DTDsLEmRIprwaoqzQXg13nzAVMNjYW4249xWZrXyWTKvAaZ92iPS8LFQViyoDIXWIdTnATEAAA=",
     "exposure": "152mm · ƒ/4 · 1/160s · ISO 200",
     "lens": "70–200mm GM II",
-    "sourceHash": "9aa0eca88f93"
+    "sourceHash": "9aa0eca88f93",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   },
   "jackson-behind-the-scenes": {
     "id": "jackson-behind-the-scenes",
@@ -1113,6 +1680,12 @@
     "blur": "data:image/webp;base64,UklGRgQBAABXRUJQVlA4IPgAAADQBgCdASoUACQAPu1ip04ppaMjKq35MB2JbACdOUFUa7ozwACG5CUoQCJqVkkNS9VvTyFP0Vxbzcit9ByoeIAA/qwVXosNCJxLvoNv0inYqUPj0zgqgIwazO03GenhnJyJIynqS8lzs3pYD1T0pEIRJpe9bSWrHasX6kNd6DJhq9cGzXZ+nr53bwjHAP800uRL3Vc3c6pIiqEVCIAt1/0jxY/YffngZmbUyeSf24AR1k3JS9lpN0wxE8a8WX+MgQEj2lfSZ0pkcZsk4nMpPtA6HPv58LygUvsfUVVpOPEZP7iZK6/UA+1YZyz3K+rQrhH45OG1HAoAAA==",
     "exposure": null,
     "lens": null,
-    "sourceHash": "b25e6ab4ff25"
+    "sourceHash": "b25e6ab4ff25",
+    "profile": "standard",
+    "widths": [
+      640,
+      1280,
+      2048
+    ]
   }
 }

@@ -19,6 +19,8 @@ type Generated = {
   exposure: string | null;
   lens: string | null;
   sourceHash: string;
+  /** AVIF widths available for this photo; featured photos also have 2560. */
+  widths?: number[];
 };
 
 type Editorial = { alt: string; focus?: string };
@@ -418,7 +420,16 @@ export function photo(id: string): Photo {
 export const WIDTHS = [640, 1280, 2048] as const;
 
 export function srcSet(p: Photo) {
-  return WIDTHS.map((w) => `${p.path}-${w}.avif ${Math.min(w, p.width)}w`).join(", ");
+  return (p.widths ?? WIDTHS).map((w) => `${p.path}-${w}.avif ${Math.min(w, p.width)}w`).join(", ");
+}
+
+/**
+ * `sizes` for a photo shown with object-fit: cover in a box `boxWidth` wide
+ * and `boxHeight` tall (CSS lengths). When the photo is wider than the box,
+ * cover renders it at height × aspect, so the browser needs that width.
+ */
+export function coverSizes(p: Photo, boxWidth: string, boxHeight: string) {
+  return `max(${boxWidth}, calc(${boxHeight} * ${p.aspect.toFixed(3)}))`;
 }
 
 /** WebP fallback (1600px wide) for browsers without AVIF. */
