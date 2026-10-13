@@ -199,12 +199,15 @@ export const projects: Project[] = [
     location: "University of Florida",
     summary: "General body headshots for Florida Cicerones, made in natural light under campus archways.",
     cover: gb("headshot-01"),
-    // Ten more member headshots (headshot-05…11, candid, duo, mascot) are
-    // prepared but marked pending in the private selection until publication
-    // permission is confirmed.
     sequence: [
       { kind: "pair", photos: [gb("headshot-01"), gb("headshot-02")] },
+      { kind: "wide", photo: gb("candid-01") },
+      { kind: "trio", photos: [gb("headshot-05"), gb("headshot-06"), gb("headshot-07")] },
+      { kind: "pair", photos: [gb("headshot-10"), gb("headshot-11")] },
+      { kind: "pair", photos: [gb("headshot-08"), gb("headshot-09")] },
       { kind: "pair", photos: [gb("headshot-03"), gb("headshot-04")] },
+      { kind: "offset", photo: gb("duo-portrait-01"), side: "right" },
+      { kind: "offset", photo: gb("mascot-01"), side: "left" },
     ],
   },
   {
