@@ -1,7 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  // Preview Worker only. It is served on workers.dev and has no routes or
-  // custom domains, so it cannot affect photosbyjackson.org (still on Canva).
+  // Default environment: the preview Worker. `npm run cf:deploy` targets it.
+  // It is served on workers.dev only and has no routes or custom domains.
   "name": "photosbyjackson-preview",
   "main": ".open-next/worker.js",
   "compatibility_date": "2026-10-01",
@@ -17,5 +17,22 @@
     // Not secret. RESEND_API_KEY is set with `wrangler secret put`.
     "CONTACT_FROM_EMAIL": "Photos by Jackson <inquiries@send.jacksonkracht.com>",
     "CONTACT_TO_EMAIL": "jackson@photosbyjackson.org"
+  },
+
+  "env": {
+    // Production Worker: `npm run cf:deploy:production`.
+    // Custom domains are attached separately at cutover (see docs/LAUNCH.md),
+    // so deploying this never changes photosbyjackson.org on its own.
+    "production": {
+      "name": "photosbyjackson",
+      "workers_dev": true,
+      "preview_urls": false,
+      "observability": { "enabled": true },
+      // vars are not inherited between environments.
+      "vars": {
+        "CONTACT_FROM_EMAIL": "Photos by Jackson <inquiries@send.jacksonkracht.com>",
+        "CONTACT_TO_EMAIL": "jackson@photosbyjackson.org"
+      }
+    }
   }
 }

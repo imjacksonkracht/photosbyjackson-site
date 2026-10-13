@@ -98,18 +98,20 @@ The site runs on Cloudflare Workers through the OpenNext adapter
 
 ```bash
 npm run cf:preview   # build and serve locally in the Workers runtime (workerd)
-npm run cf:deploy    # build and deploy the Worker named in wrangler.jsonc
+npm run cf:deploy    # build and deploy the preview Worker (photosbyjackson-preview)
+npm run cf:deploy:production  # build and deploy the production Worker (photosbyjackson)
 ```
 
-- `wrangler.jsonc` names the Worker `photosbyjackson-preview`. It is on `workers.dev`
-  only, with no routes or custom domains.
+- `wrangler.jsonc`: the default environment is the preview Worker; `env.production` is
+  the `photosbyjackson` Worker. Neither has custom domains yet; the cutover plan is in
+  `docs/LAUNCH.md`.
 - Every page is prerendered, so `open-next.config.ts` serves prerendered pages from
   Workers static assets (`staticAssetsIncrementalCache`); no KV or R2 is needed.
 - Next.js is pinned to 16.3.8: OpenNext 1.20.10 can't yet run Next 16.4
   ([opennextjs-cloudflare#1448](https://github.com/opennextjs/opennextjs-cloudflare/issues/1448)).
 - Rollback: `npx wrangler deployments list` then `npx wrangler rollback <version-id>`.
 - `CONTACT_FROM_EMAIL` and `CONTACT_TO_EMAIL` are plain vars in `wrangler.jsonc`.
-  Set the API key as a secret: `npx wrangler secret put RESEND_API_KEY`.
+  Set the API key as a secret on each Worker: `npx wrangler secret put RESEND_API_KEY` (preview) and `npx wrangler secret put RESEND_API_KEY --env production`.
 - Old URLs: `/portfolio` → `/work`; `/work/sports` → `/work`; renamed project slugs
   redirect to their new pages.
 - vinext (`npx vinext check`: 94% compatible) is Cloudflare's recommended path for new
