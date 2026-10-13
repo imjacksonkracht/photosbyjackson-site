@@ -92,7 +92,7 @@ export function WorkIndex({ initial }: { initial: Filter }) {
             })}
           </ul>
           <a href={site.galleries} className="meta hidden shrink-0 text-bone/80 hover:text-bone sm:block">
-            Client galleries ↗
+            Client Galleries ↗
           </a>
         </div>
       </nav>

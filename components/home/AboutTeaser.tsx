@@ -22,7 +22,7 @@ export function AboutTeaser() {
             portraits.
           </p>
           <Link href="/about" className="link-line mt-6 inline-block pb-0.5 text-sm">
-            About me
+            More about me
           </Link>
         </div>
       </div>

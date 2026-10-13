@@ -24,7 +24,7 @@ export function SiteFooter() {
             </li>
             <li>
               <a className={link} href={site.galleries}>
-                Client galleries ↗
+                Client Galleries ↗
               </a>
             </li>
             <li>

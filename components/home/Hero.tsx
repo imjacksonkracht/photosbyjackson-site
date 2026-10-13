@@ -62,7 +62,7 @@ export function Hero() {
                 href="/work"
                 className="group inline-flex items-center gap-3 bg-bone px-5 py-3 text-sm font-medium text-ink transition-colors hover:bg-white"
               >
-                See the work
+                See my work
                 <span aria-hidden className="transition-transform duration-500 group-hover:translate-x-1">
                   →
                 </span>
