@@ -21,10 +21,15 @@
 
   "env": {
     // Production Worker: `npm run cf:deploy:production`.
-    // Custom domains are attached separately at cutover (see docs/LAUNCH.md),
-    // so deploying this never changes photosbyjackson.org on its own.
+    // Serves photosbyjackson.org since the 2026-10-13 cutover (docs/LAUNCH.md).
+    // www redirects to the apex through a zone redirect rule, which runs
+    // before the Worker.
     "production": {
       "name": "photosbyjackson",
+      "routes": [
+        { "pattern": "photosbyjackson.org", "custom_domain": true },
+        { "pattern": "www.photosbyjackson.org", "custom_domain": true }
+      ],
       "workers_dev": true,
       "preview_urls": false,
       "observability": { "enabled": true },

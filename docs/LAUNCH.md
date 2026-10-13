@@ -1,7 +1,12 @@
 # Production launch: photosbyjackson.org → Cloudflare Worker
 
-Status: **ready, not applied.** Step 0 (TTL 3600 → 60) was applied on
-2026-10-13. Every other step needs explicit approval.
+Status: **live.** Cut over on 2026-10-13 at 11:45 ET, with the user's approval. All
+steps succeeded, and photosbyjackson.org is served by the `photosbyjackson` Worker.
+The rollback below still applies if ever needed (the Canva values are preserved).
+
+Custom domain IDs: apex `9fea6384c6afad1e843d5305e44cbe28049696bc`,
+www `ca2db9d3078e1e569c02ca1654ef0705bb15015b`. Both are recorded in
+`env.production.routes`.
 
 - Production Worker: `photosbyjackson` (`wrangler.jsonc` → `env.production`), currently
   https://photosbyjackson.jackson-185.workers.dev
@@ -42,8 +47,10 @@ URLs, sitemap, and robots already use it). Canva also redirects www → apex tod
    301, query string preserved.
 5. Verify: both hosts, a deep link on www, HTTPS, the redirects, images, a contact
    inquiry, and that `galleries.photosbyjackson.org` still loads Pixieset.
-6. Afterwards: add the custom domains to `env.production.routes` in `wrangler.jsonc`
-   so future deploys keep them.
+6. ~~Add the custom domains to `env.production.routes`.~~ Done.
+
+The custom domain took about 1–2 minutes to take effect at Cloudflare's edge; during
+that window requests still reached Canva.
 
 Nothing else in the zone changes.
 
