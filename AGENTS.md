@@ -2,31 +2,38 @@
 
 ## Purpose and layout
 
-This is a dependency-free photography portfolio and booking site. The primary files are `index.html`, `style.css`, and `script.js`; gallery assets are expected under `images/{concerts,sports,events,portraits}/`.
+Portfolio and booking site for Jackson Kracht. Next.js App Router + TypeScript + Tailwind CSS v4 + Motion, tested with Playwright. The 2026 redesign brief approved replacing the earlier dependency-free static prototype (kept for reference in `legacy/`).
+
+- `app/`: routes (`/`, `/work`, `/work/{music,sports,events,portraits}`, `/work/[slug]`, `/about`, `/contact`, `/api/contact`).
+- `components/`: UI. `content/`: all editable data. `lib/`: shared logic.
+- `scripts/process-photos.mjs` builds `public/photos/` derivatives from originals in `photos/` (gitignored), driven by the private `photos/selection.json`.
+- Portfolio categories: Live Music, Events, Portraits & Headshots. Sports is retired; keep its originals but do not list it.
 
 ## Local use
 
-There is no build step:
-
 ```bash
-python3 -m http.server 8000
+npm install
+npm run dev
 ```
 
 ## Constraints
 
-- Keep the site deployable as plain static files unless the user explicitly approves a build system.
-- The current gallery probes sequential JPEG names. Verify actual assets before changing counts or paths.
-- Do not invent portfolio images, prices, turnaround times, contact details, reviews, or business claims.
-- Keep contact and pricing values consistent wherever duplicated in HTML and JavaScript.
-- Preserve keyboard access, focus behavior, alt text, responsive layout, lazy loading, theme behavior, and lightbox controls.
-- Ensure the hero and Open Graph image have a real, deployable fallback.
+- This version of Next.js has breaking changes from older releases; check `node_modules/next/dist/docs/` before using unfamiliar APIs.
+- Use only Jackson's genuine photographs. Verify a file exists before referencing it; every id must exist in both `content/photos.generated.json` and `content/photos.ts`.
+- Do not invent prices, turnaround times, contact details, reviews, clients, credentials, event dates, locations, or gallery URLs. Leave optional fields out rather than guessing.
+- Keep business details in `content/site.ts` so duplicated values cannot diverge.
+- Do not identify people in photos by name in public copy, alt text, filenames, manifests, or scripts. Client names may appear only in the private `photos/` folder.
+- Publish client photos only when Jackson has confirmed permission. Mark others `"pending": true` in the selection.
+- Preserve keyboard access, focus handling, alt text, responsive layout, lazy loading, reduced-motion support, and lightbox controls.
+- Never put credentials in client code. Contact delivery secrets are server env vars only.
+- Do not deploy, change DNS, or alter the Pixieset gallery platform without explicit approval.
 
 ## Verification
 
-- Serve the site locally and test navigation, filters, lightbox, keyboard controls, theme, and representative mobile/desktop widths.
-- Check for missing assets, broken links, console errors, invalid HTML, and inaccessible interactive controls.
+- `npm run typecheck`, `npm run lint`, `npm run build`, `npm test`.
+- Review screenshots (`npm run screenshots`) at 375, 390, 768, 1024, and 1440 widths.
 - Report missing image content separately from code defects.
 
 ## Code review rules
 
-- Flag references to nonexistent image files, duplicated business details that diverge, inaccessible controls, and unnecessary dependencies.
+- Flag references to nonexistent photo ids, duplicated business details that diverge, inaccessible controls, unverified claims, and unnecessary dependencies.
