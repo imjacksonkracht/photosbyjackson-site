@@ -55,11 +55,15 @@ export default function AboutPage() {
               <p>
                 I also shoot{" "}
                 <Link className="link-line text-bone" href="/work/events">
-                  campus events
-                </Link>{" "}
-                for student organizations, plus{" "}
+                  student organizations
+                </Link>
+                ,{" "}
                 <Link className="link-line text-bone" href="/work/portraits">
-                  headshots and group portraits
+                  headshots
+                </Link>
+                , and{" "}
+                <Link className="link-line text-bone" href="/work/portraits">
+                  group portraits
                 </Link>
                 .
               </p>
