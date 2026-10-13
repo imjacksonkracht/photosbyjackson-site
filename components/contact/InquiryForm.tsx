@@ -114,7 +114,7 @@ export function InquiryForm() {
       >
         <p className="display text-[clamp(3rem,7vw,6rem)]">Inquiry sent.</p>
         <p className="mt-6 max-w-md text-lg text-ash">
-          Thanks. I’ll reply to <span className="text-bone">{status.email}</span>. If it’s urgent, email{" "}
+          Thanks. I’ll reply to <span className="text-bone">{status.email}</span>. Need me sooner? Email{" "}
           <a className="link-line text-bone" href={`mailto:${site.email}`}>
             {site.email}
           </a>
@@ -247,7 +247,7 @@ export function InquiryForm() {
               rows={5}
               required
               maxLength={LIMITS.message}
-              placeholder="What’s happening, how long you need coverage, and how you’ll use the photos."
+              placeholder="What, when, and how long"
               onBlur={() => onBlur("message")}
               className={`${fieldBase} ${border("message")} resize-y`}
               {...aria("message")}

@@ -69,7 +69,7 @@ const editorial: Record<string, Editorial> = {
   // Swamp Fest
   "swamp-fest-co2-cannons-01": {
     alt: "CO2 cannons fire white plumes across the Swamp Fest stage as the crowd raises their hands at night.",
-    focus: "50% 50%",
+    focus: "72% 45%",
   },
   "swamp-fest-crowd-01": {
     alt: "A packed festival crowd lit red, hands and phones raised, under tall stadium lights.",
@@ -218,6 +218,51 @@ const editorial: Record<string, Editorial> = {
   },
   "gator-grill-club-food-03": {
     alt: "A plate with a hot dog and grilled corn is handed across the serving table.",
+  },
+
+  // Gator Gallop
+  "gator-gallop-runner-01": {
+    alt: "A runner painted half blue and half orange points ahead while sprinting down the road.",
+    focus: "55% 35%",
+  },
+  "gator-gallop-start-line-01": {
+    alt: "Runners pack the start line beneath the inflatable Gator Gallop arch under oak trees.",
+  },
+  "gator-gallop-check-in-01": {
+    alt: "Two runners in green gator costumes do the Gator Chomp under the Gator Gallop check-in banner.",
+    focus: "50% 45%",
+  },
+  "gator-gallop-runner-02": {
+    alt: "A smiling runner reaches out for a fist bump from a volunteer along the course.",
+    focus: "70% 40%",
+  },
+  "gator-gallop-runners-01": {
+    alt: "Four friends in orange and blue cheer with arms raised as they run together.",
+    focus: "50% 40%",
+  },
+  "gator-gallop-runners-02": {
+    alt: "Two runners laugh together mid-race, one holding a phone.",
+    focus: "50% 40%",
+  },
+  "gator-gallop-runners-03": {
+    alt: "Two runners cheer toward the camera, one pushing a stroller.",
+    focus: "50% 40%",
+  },
+  "gator-gallop-runners-04": {
+    alt: "A group of runners cheers and waves as they head down the course.",
+    focus: "50% 35%",
+  },
+  "gator-gallop-high-five-01": {
+    alt: "A runner high-fives a spectator in a banana costume along the course.",
+    focus: "55% 45%",
+  },
+  "gator-gallop-finishers-01": {
+    alt: "Two finishers in blue and orange body paint pose with their medals in front of balloons.",
+    focus: "50% 40%",
+  },
+  "gator-gallop-dog-01": {
+    alt: "A woman kneels on the grass to greet a gray dog wearing an orange and blue bandana.",
+    focus: "45% 55%",
   },
 
   // Homecoming Parade

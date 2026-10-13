@@ -187,6 +187,10 @@ async function processOne(entry, buf, hash, previous) {
 
 async function shareImages(manifest) {
   await mkdir(path.join(PUBLIC, "og"), { recursive: true });
+  const wanted = new Set(projects.map((p) => `${p.slug}.jpg`));
+  for (const f of await readdir(path.join(PUBLIC, "og"))) {
+    if (!wanted.has(f)) await rm(path.join(PUBLIC, "og", f));
+  }
   const jobs = projects.map((p) => [p.cover, path.join(PUBLIC, "og", `${p.slug}.jpg`)]);
   jobs.push([HERO, path.join(PUBLIC, "og.jpg")]);
   for (const [id, out] of jobs) {

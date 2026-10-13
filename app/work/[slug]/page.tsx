@@ -11,7 +11,9 @@ import {
   formatDate,
   getProject,
   photosIn,
+  projectLabel,
   projects,
+  type Project,
 } from "@/content/projects";
 import { site } from "@/content/site";
 import { JsonLd } from "@/lib/jsonld";
@@ -19,6 +21,13 @@ import { JsonLd } from "@/lib/jsonld";
 type Params = { params: Promise<{ slug: string }> };
 
 export const dynamicParams = false;
+
+/** Meta description built from verified facts only. */
+function describe(p: Project) {
+  const when = p.date ? ` on ${formatDate(p.date)}` : "";
+  const where = p.location ? ` in ${p.location}` : "";
+  return `${p.title}: ${projectLabel(p).toLowerCase()} photography by ${site.photographer}${where}${when}.`;
+}
 
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -29,11 +38,10 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const project = getProject(slug);
   if (!project) return {};
   const cover = photo(project.cover);
-  const category = categories[project.category].label.toLowerCase();
   const image = shareImage(project.slug);
   return {
     title: project.title,
-    description: `${project.summary} ${category[0].toUpperCase()}${category.slice(1)} photography by ${site.photographer}.`,
+    description: describe(project),
     alternates: { canonical: `/work/${project.slug}` },
     openGraph: {
       type: "article",
@@ -50,21 +58,16 @@ export default async function ProjectPage({ params }: Params) {
   if (!project) notFound();
 
   const { prev, next } = adjacentProjects(slug);
-  const count = photosIn(project).length;
   const category = categories[project.category];
-
-  const facts = [
-    project.date && { term: "Date", value: formatDate(project.date) },
-    project.location && { term: "Location", value: project.location },
-    { term: "Category", value: category.label },
-    { term: "Photographs", value: String(count) },
-  ].filter(Boolean) as { term: string; value: string }[];
+  const facts = [projectLabel(project), project.date && formatDate(project.date), project.location].filter(
+    Boolean,
+  ) as string[];
 
   const ld = {
     "@context": "https://schema.org",
     "@type": "ImageGallery",
     name: project.title,
-    description: project.summary,
+    description: describe(project),
     url: `${site.url}/work/${project.slug}`,
     ...(project.date ? { dateCreated: project.date } : {}),
     author: { "@type": "Person", name: site.photographer },
@@ -79,8 +82,8 @@ export default async function ProjectPage({ params }: Params) {
   return (
     <article>
       <JsonLd data={ld} />
-      <header className="gutter pb-16 pt-32 md:pb-24 md:pt-44">
-        <nav aria-label="Breadcrumb" className="meta mb-10 flex gap-3">
+      <header className="gutter pb-8 pt-28 md:pb-12 md:pt-36">
+        <nav aria-label="Breadcrumb" className="meta mb-6 flex gap-3">
           <Link href="/work" className="link-line hover:text-bone">
             Work
           </Link>
@@ -89,37 +92,29 @@ export default async function ProjectPage({ params }: Params) {
             {category.label}
           </Link>
         </nav>
-        <h1 className="display text-[clamp(3.6rem,13vw,13rem)]">{project.title}</h1>
-        <div className="mt-10 grid gap-10 border-t border-line pt-6 md:mt-14 md:grid-cols-12">
-          <dl className="grid grid-cols-2 gap-x-6 gap-y-5 md:col-span-6 md:grid-cols-4">
-            {facts.map((f) => (
-              <div key={f.term}>
-                <dt className="meta mb-1.5">{f.term}</dt>
-                <dd className="text-sm text-bone">{f.value}</dd>
-              </div>
+        <h1 className="display text-[clamp(3.2rem,10vw,10rem)]">{project.title}</h1>
+        <div className="mt-6 flex flex-col gap-3 border-t border-line pt-4 md:flex-row md:items-center md:justify-between">
+          <p className="meta flex flex-wrap gap-x-3 gap-y-1 text-bone/80">
+            {facts.map((f, i) => (
+              <span key={f}>
+                {i > 0 && <span aria-hidden className="mr-3 text-ash">/</span>}
+                {f}
+              </span>
             ))}
-          </dl>
-          <div className="md:col-span-5 md:col-start-8">
-            <p className="text-lg leading-relaxed text-bone/90">{project.summary}</p>
-            {project.galleryUrl && (
-              <a
-                href={project.galleryUrl}
-                className="group mt-6 inline-flex items-center gap-2 text-sm text-bone"
-              >
-                <span className="link-line pb-0.5">Full gallery and downloads</span>
-                <span aria-hidden className="text-ember transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5">
-                  ↗
-                </span>
-              </a>
-            )}
-          </div>
+          </p>
+          {project.galleryUrl && (
+            <a href={project.galleryUrl} className="group meta inline-flex items-center gap-2 text-bone">
+              <span className="link-line pb-0.5">Full gallery</span>
+              <span aria-hidden className="text-ember">↗</span>
+            </a>
+          )}
         </div>
       </header>
 
       <Sequence rows={project.sequence} title={project.title} />
 
       {project.galleryUrl && (
-        <div className="gutter mt-20 flex justify-center md:mt-32">
+        <div className="gutter mt-12 flex justify-center md:mt-16">
           <a
             href={project.galleryUrl}
             className="display-medium link-line pb-1 text-[clamp(1.4rem,2.4vw,2rem)] text-bone"
@@ -129,7 +124,7 @@ export default async function ProjectPage({ params }: Params) {
         </div>
       )}
 
-      <nav aria-label="More projects" className="mt-24 grid border-t border-line md:mt-36 md:grid-cols-2">
+      <nav aria-label="More projects" className="mt-14 grid border-t border-line md:mt-20 md:grid-cols-2">
         {[
           { label: "Previous", p: prev },
           { label: "Next", p: next },

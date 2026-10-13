@@ -16,8 +16,8 @@ export default function Home() {
       <JsonLd data={personLd} />
       <JsonLd data={websiteLd} />
       <Hero />
-      <SelectedWork />
       <CategoryNav />
+      <SelectedWork />
       <AboutTeaser />
       <BookingCTA />
     </>

@@ -18,7 +18,10 @@ const nextConfig: NextConfig = {
       { source: "/work/concerts", destination: "/work/music", permanent: true },
       // Sports left the portfolio in October 2026.
       { source: "/work/sports", destination: "/work", permanent: false },
-      { source: "/work/gator-gallop-2026", destination: "/work/events", permanent: false },
+      { source: "/work/gator-gallop-2026", destination: "/work/gator-gallop", permanent: true },
+      { source: "/work/its-all-a-blur-tour", destination: "/work/drake-j-cole-its-all-a-blur-tour", permanent: true },
+      // Hidden for now; its photos and data are kept.
+      { source: "/work/gator-jam", destination: "/work/music", permanent: false },
       // Project renamed when the Cicerones work split into two projects.
       { source: "/work/headshots", destination: "/work/florida-cicerones-general-body-headshots", permanent: true },
       { source: "/work/florida-cicerones", destination: "/work/florida-cicerones-recruitment-portraits", permanent: true },

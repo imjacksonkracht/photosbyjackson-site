@@ -5,11 +5,11 @@ import { categories, categoryCovers, categoryOrder } from "@/content/projects";
 export function CategoryNav({ headingLevel = 2 }: { headingLevel?: 2 | 3 }) {
   const H = headingLevel === 2 ? "h2" : "h3";
   return (
-    <section aria-labelledby="categories-title" className="border-y border-line">
+    <section aria-labelledby="categories-title" className="border-b border-line">
       <H id="categories-title" className="sr-only">
         Browse by category
       </H>
-      <ul className="flex flex-col md:h-[min(82vh,56rem)] md:flex-row">
+      <ul className="flex flex-col md:h-[min(74vh,50rem)] md:flex-row">
         {categoryOrder.map((c) => (
           <li
             key={c}
