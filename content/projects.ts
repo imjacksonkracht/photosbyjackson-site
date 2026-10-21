@@ -210,11 +210,17 @@ export const allProjects: Project[] = [
     category: "portraits",
     location: "University of Florida",
     cover: rec("group-portrait-01"),
-    // More edited recruitment headshots are coming; add them as new rows.
     sequence: [
       { kind: "wide", photo: rec("group-portrait-01") },
-      { kind: "pair", photos: [rec("group-portrait-02"), rec("group-portrait-03")] },
-      { kind: "pair", photos: [rec("group-portrait-04"), rec("group-portrait-05")] },
+      { kind: "trio", photos: [rec("headshot-01"), rec("headshot-02"), rec("headshot-03")] },
+      { kind: "wide", photo: rec("group-portrait-02") },
+      { kind: "pair", photos: [rec("duo-portrait-01"), rec("group-portrait-03")] },
+      { kind: "trio", photos: [rec("headshot-04"), rec("headshot-05"), rec("headshot-06")] },
+      { kind: "wide", photo: rec("group-portrait-04") },
+      { kind: "pair", photos: [rec("group-portrait-05"), rec("duo-portrait-02")] },
+      { kind: "wide", photo: rec("group-portrait-06") },
+      { kind: "trio", photos: [rec("headshot-07"), rec("group-portrait-07"), rec("headshot-08")] },
+      { kind: "wide", photo: rec("group-portrait-08") },
     ],
   },
 ];
