@@ -368,21 +368,71 @@ const editorial: Record<string, Editorial> = {
 
   // Florida Cicerones — Recruitment Portraits
   "florida-cicerones-recruitment-group-portrait-01": {
-    alt: "Three Florida Cicerones members in matching 'Chase Your Horizons' shirts under a stone archway.",
+    alt: "Five Florida Cicerones members in 'Chase Your Horizons' shirts laugh together under a stone archway.",
+  },
+  "florida-cicerones-recruitment-headshot-01": {
+    alt: "A young woman holds out her 'Chase Your Horizons' shirt and smiles in a vaulted stone corridor.",
+    focus: "50% 25%",
+  },
+  "florida-cicerones-recruitment-headshot-02": {
+    alt: "A young man in glasses and a 'Chase Your Horizons' shirt smiles with his hands in his pockets under a stone arch.",
+    focus: "50% 35%",
+  },
+  "florida-cicerones-recruitment-headshot-03": {
+    alt: "A young woman in a 'Chase Your Horizons' shirt and white jeans tilts her head under a stone archway.",
+    focus: "50% 25%",
   },
   "florida-cicerones-recruitment-group-portrait-02": {
-    alt: "Three Cicerones members hold hands and walk toward the camera in a brick courtyard.",
-    focus: "50% 50%",
+    alt: "Nine Cicerones members make the Gator Chomp with their arms on a brick plaza.",
+  },
+  "florida-cicerones-recruitment-duo-portrait-01": {
+    alt: "A young woman sits on a young man's shoulders with one arm raised in a vaulted stone corridor.",
+    focus: "50% 30%",
   },
   "florida-cicerones-recruitment-group-portrait-03": {
-    alt: "Three Cicerones members stand together under a lantern in a stone corridor.",
-    focus: "50% 45%",
+    alt: "Three Cicerones members stack their faces on their hands, one above another, under a stone arch.",
+    focus: "50% 40%",
+  },
+  "florida-cicerones-recruitment-headshot-04": {
+    alt: "A young woman tugs at her 'Chase Your Horizons' shirt in front of the bronze gator statues.",
+    focus: "50% 30%",
+  },
+  "florida-cicerones-recruitment-headshot-05": {
+    alt: "A young man holds out his 'Chase Your Horizons' shirt and smiles under a stone archway.",
+    focus: "50% 30%",
+  },
+  "florida-cicerones-recruitment-headshot-06": {
+    alt: "A young woman with long dark hair smiles beneath a lantern in a vaulted stone corridor.",
+    focus: "50% 35%",
   },
   "florida-cicerones-recruitment-group-portrait-04": {
-    alt: "Three Florida Cicerones members smile in a vaulted stone corridor.",
+    alt: "Three Cicerones members strike a playful pose on the ground, legs outstretched, in a stone archway.",
   },
   "florida-cicerones-recruitment-group-portrait-05": {
-    alt: "Three Cicerones members lean in and laugh under a stone archway.",
+    alt: "Three Cicerones members stack their faces on their hands, kneeling in a stone corridor.",
+    focus: "50% 40%",
+  },
+  "florida-cicerones-recruitment-duo-portrait-02": {
+    alt: "A young man rests his chin above a young woman's, both framing their faces with their hands, under a stone arch.",
+    focus: "50% 30%",
+  },
+  "florida-cicerones-recruitment-group-portrait-06": {
+    alt: "Eight Cicerones members pile together, several riding piggyback, on a tree-lined brick plaza.",
+  },
+  "florida-cicerones-recruitment-headshot-07": {
+    alt: "A young woman tugs at the hem of her 'Chase Your Horizons' shirt and smiles under a stone archway.",
+    focus: "50% 30%",
+  },
+  "florida-cicerones-recruitment-group-portrait-07": {
+    alt: "Three Cicerones members kneel and smile as a puppy trots toward the camera in a stone corridor.",
+    focus: "50% 60%",
+  },
+  "florida-cicerones-recruitment-headshot-08": {
+    alt: "A young woman with curly hair grins and holds up a green sticker on a sunny courtyard.",
+    focus: "50% 25%",
+  },
+  "florida-cicerones-recruitment-group-portrait-08": {
+    alt: "Three Cicerones members stand with arms crossed in a stone archway.",
   },
 
   // About
